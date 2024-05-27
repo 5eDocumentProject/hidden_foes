@@ -1,0 +1,23 @@
+name: Spore Serpent
+sorttype: index
+headers:
+ mark: group
+ toc: group
+ title: group
+flavor: A writhing mass of tentacles emerges from this slimy, serpentine dragon's mouth. 
+description:
+- header: Lords of Decay
+  text: >
+   Spore serpents live off of decaying matter, dwelling in dark, damp places full of mold and fungus. Many spore serpents serve deities
+   of rot and decay as spies or attendants, but an almost equal number are content to mind their own buisness and cultivate alien gardens
+   of mushrooms.
+- header: Fungal Servants
+  text: >
+   The diseases that spore serpents spread turn the afflicted into fungal slaves. These servants come in two principal categories: some
+   are strong hulks of rotting matter, and some appear almost as they did in life. The first kind
+   serve as bodyguards for the spore serpent, and are usually found throughout its lair. The second kind is sent abroad to infiltrate
+   nearby settlements and bring the serpent news of the outside world.
+habitat:
+- swamp
+- forest
+- underground

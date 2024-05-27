@@ -1,0 +1,16 @@
+name: Shambler
+headername: Shamblers
+sorttype: alphabetical
+headers:
+ mark: monster
+ toc: group
+ title: monster
+type: plant
+description:
+- header: Awakened Trees
+  text: >
+   Shamblers are trees that have been granted mobility by some form of magic. Unlike regular awakened trees or treants, a shambler
+   has animal-level intelligence, and usually continues its life as a normal tree unless threatened. Druidic groups sometimes create
+   groves of shamblers to serve as guardians of forest glades.
+abilities:
+- name: Rooted

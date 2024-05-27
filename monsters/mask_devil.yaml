@@ -1,0 +1,108 @@
+name: Mask Devil
+headername: Devil, Mask
+size: medium
+type: fiend
+tags:
+- devil
+- shapechanger
+alignment: lawful evil
+cr: 7
+hd: 11
+ac:
+- 2
+- 12 + Dex
+- natural armor
+speed:
+ land: 35
+stats:
+ str: 2
+ dex: 17
+ con: 15
+ int: 14
+ wis: 16
+ cha: 19
+saves:
+- dex
+- con
+- wis
+- cha
+skills:
+- deception
+senses:
+- darkvision 60 ft
+languages:
+- celestial
+- common
+- infernal
+vulnerable:
+- psychic
+immune:
+- acid
+- poison
+- fire
+resist:
+- necrotic
+- bludgeoning, piercing, and slashing from non-magical weapons
+abilities:
+- name: Magic Resistance
+- name: Mask Bound
+  effect: >
+   The mask devil carries four magical masks. If any of its masks are stolen, its maximum hit points are reduced by 20 for each mask
+   stolen. If its maximum hit points are reduced to zero in this way, the mask devil explodes in a cloud of black smoke and a cacophony
+   of high-pitched wails.
+- name: Masquerade
+  effect: >
+   At the start of each of the mask devil's turns, it can choose one humanoid within 30 feet. It assumes the outward appearance of that
+   creature, and its Str and Dex scores change to be the same as that creature's. The mask devil also has access to all weapon attacks
+   that the creature has. The mask devil remains masquerading as that creature until it masquerades as a different creature or until
+   it chooses to stop masquerading (which can be done at any time). When the mask devil dies, it reverts to its natural form before
+   melting away in a cloud of black smoke.
+- name: Psyche Shredder
+  effect: >
+   The mask devil's weapon attacks deal an additional 10 (3d6) psychic damage on a hit (this is accounted for in the lash attack below).
+actions:
+- name: Multiattack
+  effect: The mask devil makes three lash attacks, or two weapon attacks taken from the masqueraded creature.
+- name: Mask
+  uses: recharge 5-6
+  effect: >
+   This ability can only be used when the mask devil is not masquerading as another creature. The mask devil may not use the same effect
+   twice in a row. When the mask devil uses this ability, choose one of the effects below:
+   [bulletlist
+   Mask of Draining: One humanoid within 30 feet must make a [save w/cha cha], taking [roll 3 8] necrotic damage on a failure or
+   half as much damage on a success. The mask devil gains temporary hit points equal to the amount of damage dealt. &
+   Mask of Entrapment: One humanoid within 30 feet must make a [save w/cha cha] or be banished to a small demiplane, and the
+   mask devil may immediately masquerade as that creature. A creature in this plane does not age and cannot be harmed in any way, and it
+   cannot interact with the outside world in any way short of plane-shifting magic. While a creature is trapped in this way, the mask
+   devil can always masquerade as that creature. Whenever the mask devil takes damage, it must make a [save w/cha cha]. On a failure, the
+   trapped creature is released in an empty space within 30 feet. The creature is also released when the mask devil masquerades as a
+   different creature. &
+   Mask of Frailty: One humanoid within 30 feet must make a [save w/cha cha]. On a failure, that creature's Str score is reduced to 2,
+   and the mask devil may immediately masquerade as that creature. The creature's Str score is restored when the mask devil stops
+   masquerading as that creature. &
+   Mask of Oblivion: All humanoids in a 30-foot cone must make a [save w/cha cha], taking [roll 6 6] psychic damage on a failure,
+   or half as much damage on a success.]
+attacks:
+- name: Lash
+  type: mw
+  ability: dex
+  reach: 10
+  special: This attack can only be made when the mask devil is not masquerading as another creature.
+  onhit: "[roll 1 4 dex] slashing damage plus [roll 3 10] psychic damage."
+habitat:
+- urban
+reactions:
+- name: Swap
+  effect: >
+   If the creature that the mask devil is masquerading as is within 30 feet when the mask devil is targeted by an effect that would cause
+   damage, the mask devil may swap locations with the creature it is currently masquerading as, with the other creature taking the
+   damage instead.
+flavor: >
+ This tall, humanoid figure is wrapped in a dark cloak that lashes as if in an invisible breeze. Four strange masks are tied
+ at the devil's waist.
+description:
+- header: Infiltrators
+  text: >
+   Mask devils are capable of infiltrating almost any humanoid society, where they try to obtain positions of power from which
+   they can corrupt as many of the surrounding people as possible. Mask devils act like high nobility, expecting others to do their
+   dirty work.

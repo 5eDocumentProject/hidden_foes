@@ -1,0 +1,68 @@
+name: Harbinger Golem
+size: large
+headername: Golem, Harbinger
+type: construct
+cr: 8
+ac:
+- 8
+- natural armor
+hd: 15
+speed:
+ land: 30
+stats:
+ str: 20
+ dex: 7
+ con: 22
+ int: 3
+ wis: 13
+ cha: 12
+saves:
+- str
+- con
+- cha
+immune:
+- poison
+- psychic
+resist:
+- cold
+- fire
+- necrotic
+- radiant
+senses:
+- truesight 60 ft
+- darkvision 120 ft
+languages:
+- nospeak
+- common
+- elvish
+- deep speech
+abilities:
+- name: Immutable Form
+- name: Hidden
+  effect: The golem cannot be detected by any form of scrying.
+actions:
+- name: Multiattack
+  effect: The golem makes two smash attacks.
+- name: Doom
+  effect: >
+   One creature within 30 feet of the golem must make a [save w/cha con]. If the creature fails, it gains vulnerability to all damage
+   and disadvantage on all saving throws until it has taken at least 30 points of damage.
+- name: Fate
+  effect: >
+   One creature within 30 feet of the golem gets a +2 bonus to AC and has advantage on all saving throws and attack rolls until the
+   creature has taken or dealt damage a total of five times.
+attacks:
+- name: Smash
+  type: mw
+  ability: str
+  onhit: >
+   [roll 3 8 str] bludgeoning damage, and the target must make a [basicsave w/cha 12], taking [roll 3 6] necrotic damage and getting
+   disadvantage on all rolls for [roll 2 4] rounds on a failure, or half as much damage and one round of disadvantage on a success.
+flavor: This imposing golem is crudely wrought out of black stone, and has a crescent moon etched in silver on its chest.
+description:
+- header: Watchers of the Stars
+  text: >
+   An ancient city-state crafted eight of these golems, each one marked with a different phase of the moon. The golems were placed in
+   a state of torpor inside of eight great towers, where they waited for a particular celestial alignment that heralded a coming
+   cataclysm. When the stars aligned, the golems were to wake and protect the city from the approaching danger. Whether they ever did
+   or not remains unknown.

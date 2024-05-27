@@ -1,0 +1,58 @@
+name: Herbarium Slug
+size: small
+type: plant
+cr: 1/4
+hd: 16
+speed:
+ land: 20
+ climb: 20
+stats:
+ str: 12
+ dex: 6
+ con: 12
+ int: 2
+ wis: 7
+ cha: 3
+resist:
+- poison
+vulnerable:
+- fire
+senses:
+- blindsight 60 ft
+abilities:
+- name: Spider Climb
+- name: Noxious Fumes
+  effect: >
+   While the slug has 40 hit points or fewer, any creature that starts its turn within 10 feet of the slug must succeed on a
+   [save w/con con] or take [roll 1 6] poison damage and be poisoned until the end of their next turn.
+- name: Regeneration
+  effect: >
+   At the start of each of the herbarium slug's turns, if it has not taken fire or necrotic damage since its last turn, it regains
+   [roll 1 8] hit points. The slug only dies if it has 0 hit points and does not regenerate.
+actions:
+- name: Spore Burst
+  uses: recharge 6
+  effect:
+   All creatures within 10 feet of the slug must succeed on a [save w/wis con] or be confused (as per the spell) for one minute.
+   An affected creature may repeat the saving throw at the end of each of its turns, ending the effect on a success.
+attacks:
+- name: Sticky Tendril
+  type: mw
+  ability: str
+  onhit: >
+   [roll 1 4 str] bludgeoning damage plus 1 acid damage, and the target's movement speed is halved until the end of their next turn.
+habitat:
+- forest
+flavor: >
+ An herbarium slug looks somewhat like a mobile bed of moss. It slides along the ground, consuming any plant matter in its path and
+ converting it into toxic, herbaceous growths on the slug's back.
+description:
+- header: Alchemical Garden
+  text: >
+   Herbarium slugs host many toxic plants which they use to defend themselves from predators. These same plants are often highly valued
+   by alchemists and the like, and many are willing to pay for a herbarium slug, either living or dead.
+- header: Awakened Herbarium
+  text: >
+   The first herbarium slugs were created when a mad druid accidentally animated his herb garden. The garden crawled off in several
+   directions, taking many of the druid's most prized herbs with it. The slugs reproduce by fission, splitting into two smaller slugs
+   once they have reached a certain size, and since that initial incident they have colonized the entire forest.

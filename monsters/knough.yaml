@@ -1,0 +1,49 @@
+name: Knough
+size: medium
+type: plant
+alignment: neutral good
+cr: 1/8
+hd: 2
+speed:
+ land: 30
+stats:
+ str: 13
+ dex: 13
+ con: 14
+ int: 12
+ wis: 14
+ cha: 11
+ac:
+- 3
+- natural armor
+senses:
+- tremorsense 60 ft
+languages:
+- common
+- sylvan
+abilities:
+- name: Speak with Plants
+  uses: 1/day
+  effect: >
+   The knough can spend one minute communing with the plants within 30 feet of it. The knough learns what creatures passed through
+   this area in the past 24 hours and what they did, or some other similar information.
+attacks:
+- name: Shortbow
+  type: mw
+  ability: dex
+  range: 80/320
+  onhit: "[roll 1 6 dex] piercing damage."
+- name: Spear
+  type: m/rw
+  range: 20/60
+  ability: str
+  onhit: "[roll 1 8 str] piercing damage."
+habitat:
+- forest
+flavor: This small, entish creature looks down from its perch in a huge oak tree with glowing blue eyes.
+description:
+- header: Forest Folk
+  text: >
+   Knough are relatively small tree-folk that dwell in small colonies in the deep forest. Occasionally, lone knough can be found wandering the world in search of new species of
+   trees or hunting creatures that did not respect the sanctity of their forests. Knough are friendly to any good-hearted travelers that stumble across their hidden villages,
+   but for the most part prefer to keep apart from other races.

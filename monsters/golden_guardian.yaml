@@ -1,0 +1,51 @@
+name: Golden Guardian
+size: large
+type: construct
+cr: 8
+hd: 19
+ac:
+- 9
+- natural armor
+speed:
+ land: 30
+stats:
+ str: 18
+ dex: 5
+ con: 18
+ int: 2
+ wis: 10
+ cha: 10
+saves:
+- con
+- str
+resist:
+- necrotic
+- radiant
+immune:
+- acid
+- poison
+- psychic
+senses:
+- darkvision 100 ft
+languages:
+- nospeak
+- common
+abilities:
+- name: Immutable Form
+- name: Aura of Distraction
+  effect: Living creatures within 30 feet of the guardian have disadvantage on all rolls that are not attack rolls against the guardian.
+actions:
+- name: Multiattack
+  effect: The guardian makes two slam attacks.
+attacks:
+- name: Slam
+  type: mw
+  reach: 10
+  ability: str
+  onhit: "[roll 3 10 str] bludgeoning damage plus [roll 1 12] radiant damage."
+flavor: This huge suit of animated golden armor is impossible to ignore---almost unnaturally so.
+description:
+- header: Vault Guardians
+  text: >
+   These constructs were created by Maladrax the Golden to guard his vast treasuries. Of course, he had to forge them out of solid gold so that they wouldn't look out of place in
+   said treasuries. The guardians were given a magic aura that draws the attention of any nearby creature, distracting them from the other ostentatious riches nearby.

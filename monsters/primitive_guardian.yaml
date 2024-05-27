@@ -1,0 +1,66 @@
+name: Primitive Guardian
+size: medium
+type: construct
+cr: 3
+ac:
+- 3
+- natural armor
+hd: 19
+speed:
+ land: 30
+stats: 
+ str: 15
+ dex: 6
+ con: 12
+ int: 1
+ wis: 4
+ cha: 1
+saves:
+- str
+- con
+- wis
+immune:
+- psychic
+resist:
+- poison
+vulnerable:
+- fire
+senses:
+- blindsight 30 ft.
+- tremorsense 60 ft.
+languages:
+- nospeak
+- common
+abilities:
+- name: Power Fluctuation
+  effect: >
+   At the start of the guardian’s turn, if its current movement speed is less than 30 ft, its movement speed increases by 5 feet.
+   For every 5 feet that the guardian’s speed is below 30, attacks against the guardian have +1 to attack rolls. At any time,
+   the guardian can reduce its movement speed by 5 feet to gain any of the following benefits:
+   [bulletlist
+   +1 to an attack roll for one attack &
+   +2 (1d4) damage for one attack &
+   +2 AC until the start of the guardian’s next turn &
+   Gain 5 (2d4) temporary hit points that last for 1 minute &
+   Move 5 feet]
+actions:
+- name: Multiattack
+  effect: The guardian makes two slam attacks.
+- name: Embermoth Barrage
+  effect: >
+   The guardian's movement speed is reduced by 5 feet. All creatures in a 30-foot line or 15-foot cone (guardian's choice) must
+   make a [save w/dex con], taking [roll 3 4] fire damage on a success, or half as much on a failure.
+attacks:
+- name: Slam
+  type: mw
+  ability: str
+  onhit: "[roll 2 6 str] bludgeoning damage."
+flavor: A ramshackle golem lumbers from the swamp, several glass jars full of glowing orange insects mounted on its back.
+description:
+- header: Powered by Embermoths
+  text: >
+   An ancient civilization captured embermoths, a type of magical, glowing insect, and used them to power simple constructs.
+   The golems were capable of draining the embermoths for additional power or as extra weaponry, but doing so would lower
+   their energy reserves for a short time, making them more vulnerable to attack.
+habitat:
+- swamp

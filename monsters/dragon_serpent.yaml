@@ -1,0 +1,64 @@
+name: Dragon Serpent
+size: huge
+type: monstrosity
+alignment: neutral
+ac:
+- 5
+- natural armor
+cr: 10
+hd: 17
+speed:
+ land: 35
+ climb: 30
+stats:
+ str: 20
+ dex: 14
+ con: 19
+ int: 15
+ wis: 18
+ cha: 14
+saves:
+- str
+- dex
+- con
+- wis
+senses:
+- truesight 60 ft.
+- darkvision 120 ft.
+languages:
+- draconic
+abilities:
+- name: Premonitions
+  effect: The dragon serpent cannot be surprised, flanked, sneak attacked, or caught off-guard by any other similar maneuver.
+- name: Razor Scales
+  effect: Whenever a creature hits the dragon serpent with an unarmed attack, that creature takes [roll 1 4] slashing damage.
+attacks:
+- name: Bite
+  type: mw
+  reach: 10
+  ability: str
+  onhit: >
+   [roll 4 8 str] piercing damage and the target must make a [save w/con con], being poisoned on a failure. While a creature is
+   poisoned in this way, it takes [roll 2 6] poison damage plus [roll 1 6] psychic damage at the start of each of its turns
+   and gains the use of the dragon serpent’s Foreknowledge reaction.
+- name: Constrict
+  type: mw
+  ability: str
+  onhit: >
+   [roll 3 10 str] bludgeoning damage plus [roll 3 4] slashing damage and the target is grappled by the serpent
+   (escape DC 18). Until this grapple ends, the target is restrained and the serpent cannot grapple another target.
+reactions:
+- name: Foreknowledge
+  effect: The serpent gets advantage on a saving throw, or gives an attacker disadvantage on an attack roll.
+flavor: An enormous serpent lies coiled on a rock, eyes seeming to stare into eternity.
+description:
+- header: Flanged Scales
+  text: >
+   A dragon serpent's scales flare up at the ends, exposing the razor-sharp edges to any creature that tries to attack the serpent.
+- header: Mountain Hermits
+  text: >
+   Dragon serpents live in isolated places, dreaming of things that may yet be. People often seek out dragon serpents for their oracular
+   abilities, but the serpents do not take kindly to any intrusion on their meditation. However, sufficient quantities of food or
+   gemstones might quell the serpent's wrath long enough to parley, or at least run.
+habitat:
+- mountain

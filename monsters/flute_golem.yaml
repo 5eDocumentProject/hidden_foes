@@ -1,0 +1,63 @@
+name: Flute Golem
+headername: Golem, Flute
+size: large
+type: construct
+cr: 9
+hd: 19
+ac:
+- 5
+- natural armor
+speed:
+ land: 30
+stats:
+ str: 19
+ dex: 10
+ con: 20
+ int: 4
+ wis: 12
+ cha: 5
+saves:
+- dex
+- con
+- wis
+immune:
+- poison
+- psychic
+- thunder
+senses:
+- darkvision 60 ft
+languages:
+- nospeak
+- deep speech
+- undercommon
+abilities:
+- name: Magic Resistance
+- name: Psychic Piping
+  effect: >
+   In even a light breeze, the flute golem emits an eerie flutelike noise that tears at the ears and mind. At the start of each of the golem’s turns, as long as the air is not
+   completely still, all creatures within 60 feet must make a [save w/con con], taking [roll 1 8] psychic damage plus [roll 1 4] thunder damage on a failed save, or half as
+   much damage on a successful one.
+- name: Free Movement
+  effect: The golem's movement speed never less than 30 feet per round.
+actions:
+- name: Multiattack
+  effect: The golem makes two shrieking blade attacks.
+- name: Scouring Wind
+  uses: recharge 6
+  effect: >
+   All creatures within 60 feet of the golem must make a [save w/con con], taking [roll 4 8] psychic damage plus [roll 2 8] thunder damage on a failed save, or half as much damage
+   on a successful one. If the creature fails the saving throw, all mental effects on the creature end (charmed, frightened, spells like suggestion or dominate person/monster,
+   etc.) and the creature is stunned indefinitely. A creature stunned in this way can repeat the saving throw at the end of each of its turns, ending the effect on itself on
+   a success. [spell Lesser Restoration] or similar magic can also end the stun effect.
+attacks:
+- name: Shrieking Blade
+  type: mw
+  ability: str
+  reach: 10
+  onhit: "[roll 2 8 str] slashing damage plus [roll 1 8] psychic damage plus [roll 1 4] thunder damage."
+flavor: This golem looks similar to an alien pipe organ, carefully constructed and tuned so that it keens an unearthly melody in even the slightest breeze.
+description:
+- header: Alien Origins
+  text: >
+   The flute golems were created by an aberrant race to serve as guardians for important locations. They are mostly found singly or in pairs 
+   on strange planes, keeping watch over ancient outposts or derilect portal-like structures.

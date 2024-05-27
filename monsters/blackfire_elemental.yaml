@@ -1,0 +1,75 @@
+name: Blackfire Elemental
+headername: Elemental, Blackfire
+size: large
+type: elemental
+alignment: neutral evil
+cr: 4
+hd: 10
+speed:
+ land: 30
+stats:
+ str: 13
+ dex: 14
+ con: 15
+ int: 12
+ wis: 10
+ cha: 10
+saves:
+- str
+- con
+vulnerable:
+- cold
+- radiant
+immune:
+- acid
+- fire
+- necrotic
+- poison
+- bludgeoning, piercing, and slashing from non-magical weapons
+skills:
+- stealth
+senses:
+- blindsight 30 ft.
+- darkvision 120 ft.
+languages:
+- ignan
+cond-immune:
+- restrained
+- grappled
+abilities:
+- name: Amorphous
+- name: Fire Form
+  effect: >
+   Any creature that touches the blackfire elemental or hits it with a melee attack suffers [roll 1 4] fire damage plus [roll 1 4]
+   necrotic damage.
+- name: Sunlight Sensitivity
+- name: Shadow Stealth
+actions:
+- name: Multiattack
+  effect: The darkfire elemental makes two burning touch attacks.
+- name: Shadow Teleportation
+  uses: recharge 6
+  effect: The elemental teleports up to 60 feet in any direction. Both the start point and the end point must be in darkness.
+attacks:
+- name: Burning Touch
+  ability: dex
+  type: mw
+  onhit: >
+   If the elemental is in sunlight, the target takes [roll 2 8 dex] fire damage. If the elemental is in bright light other than
+   sunlight, the target takes [roll 2 6 dex] fire damage plus [roll 1 4] necrotic damage. If the elemental is in normal light,
+   the target takes [roll 1 8 dex] fire damage plus [roll 1 8] necrotic damage. If the elemental is in dim light or darkness,
+   the target takes [roll 1 6 dex] fire damage plus [roll 2 6] necrotic damage.
+  special: The darkfire elemental regains hit points equal to half the amount of necrotic damage dealt.
+flavor: This elemental takes the form of a whirlwind of black flames.
+description:
+- header: Shadow Fire
+  text: >
+   Darkfire elementals are created by imbuing fire elementals with negative energy. If the ritual goes awry, it usually creates an
+   ash elemental instead.
+- header: Strength in the Dark
+  text: >
+   The balance between fire and shadow in a darkfire elemental shifts depending on the surrounding light. In brighter light, the fiery
+   aspect of the elemental is more prominent, and in darkness, the opposite is true. Darkfire elementals are far more dangerous in the
+   dark than in the light.
+habitat:
+- underground

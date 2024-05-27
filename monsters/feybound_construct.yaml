@@ -1,0 +1,69 @@
+name: Feybound Construct
+size: medium
+type: construct
+cr: 2
+ac:
+- 4
+- natural armor
+speed:
+ land: 30
+hd: 13
+stats:
+ str: 14
+ dex: 10
+ con: 12
+ int: 10
+ wis: 13
+ cha: 11
+saves:
+- str
+- con
+- wis
+resist:
+- poison
+- psychic
+skills:
+- perception
+senses:
+- darkvision 60 ft.
+languages:
+- sylvan
+abilities:
+- name: Caged Madness
+  effect: >
+   Any living creature that starts its turn within 15 feet of the construct must make a [save w/wis con], being frightened of the
+   construct on a failure. An affected creature may repeat the saving throw at the end of each of their turns, ending the effect on
+   themselves on a success. Once a creature succeeds on a saving throw, it is immune to this construct’s caged madness for 24 hours.
+- name: Immutable Form
+- name: Liberator's Blessing
+  effect: >
+   The creature that kills the feybound construct regains [roll 2 6] hit points, and can get advantage on one roll made in
+   the next 24 hours.
+actions:
+- name: Multiattack
+  effect: The feybound construct makes either one slam attack and one poisoned darts attack or two slam attacks.
+- name: Cage
+  uses: recharge 6
+  effect: >
+   [roll 2 4 2] wooden spines erupt from the ground, forming a cage around a creature within 30 feet of the construct. The spines
+   can be attacked (10 hp, 10 AC, immunity to psychic, resistance to piercing from non-magical weapons, vulnerable to fire). While the
+   spines are in place, the creature inside the cage has half cover against all attacks originating from outside the cage, and creatures
+   outside the cage have half cover against melee attacks from inside the cage.
+attacks:
+- name: Slam
+  type: mw
+  ability: str
+  onhit: "[roll 2 6 str] bludgeoning damage."
+- name: Poisoned Darts
+  type: rw
+  ability: dex
+  range: 30/50
+  onhit: >
+   [roll 1 4 dex] piercing damage and the target must make a [save w/con con], taking [roll 2 4] poison damage and being poisoned
+   for one minute on a failure, or half as much damage and not being poisoned on a success.
+flavor: This mostly-metal construct inexplicably has a profusion of flora growing from gaps in its armor.
+description:
+- header: Bound Fey Spirit
+  text: >
+   Feybound constructs are created by binding a fey spirit to a metal shell, thereby animating it. However, the spirit invariably loathes
+   captivity and quite often goes mad, lashing out in an effort to destroy everything, especially its metal prison.

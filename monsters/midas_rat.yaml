@@ -1,0 +1,35 @@
+name: Midas Rat
+size: small
+type: monstrosity
+one_column: True
+cr: 1/4
+hd: 3
+speed:
+ land: 30
+stats:
+ str: 7
+ dex: 15
+ con: 12
+ int: 4
+ wis: 11
+ cha: 7
+abilities:
+- name: Keen Smell
+- name: Pack Tactics
+attacks:
+- name: Bite
+  type: mw
+  ability: dex
+  onhit: >
+   [roll 1 4 dex] piercing damage and the target must make a [save w/con con]. On a failure, the target begins to turn to gold
+   and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure,
+   the creature is petrified (turned into solid gold) until freed by the remove curse spell or similar magic.
+habitat:
+- urban
+- underground
+flavor: This giant rat's fur is a beatiful golden-brown hue.
+description:
+- header: Cursed Rats
+  text: >
+   Midas rats were once regular giant rats, but have been cursed so that anything they bite turns to gold. Luckily for the rats, they
+   are capable of eating and being nourished by gold, so they don't starve to death.

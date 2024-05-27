@@ -1,0 +1,61 @@
+name: Stone Zombie
+headername: Zombie, Stone
+size: medium
+type: undead
+cr: 2
+hd: 5
+ac:
+- 4
+- natural armor
+alignment: neutral evil
+speed:
+ land: 25
+stats:
+ str: 15
+ dex: 8
+ con: 18
+ int: 4
+ wis: 13
+ cha: 11
+immune:
+- poison
+resist:
+- bludgeoning, piercing, and slashing from non-magical weapons
+senses:
+- tremorsense 60 ft
+languages:
+- nospeak
+- common
+- terran
+abilities:
+- name: Siege Monster
+actions:
+- name: Multiattack
+  effect: The stone zombie makes two slam attacks, two shard attacks, or one of each.
+- name: Earth Spine
+  effect: >
+   A spike of stone 5 feet in diameter erupts from the ground at a point within 60 feet. Any creatures occupying the space where the
+   spike erupted must make a [save w/dex con], taking [roll 4 6] bludgeoning damage and being knocked prone on a failure, or half as
+   much damage and not being knocked prone on a success. The targets are pushed to the nearest empty space.
+- name: Petrify
+  uses: 3/day
+  effect: >
+   One creature that the stone zombie touches must make a [save w/con con], becoming paralyzed on a failure. At the end of a paralyzed
+   creature’s turn, it must re-make the saving throw. If it succeeds, it is no longer paralyzed. If it fails, it is petrified.
+attacks:
+- name: Shard
+  type: rw
+  ability: str
+  range: 60/90
+  onhit: "[roll 1 4 str] piercing damage."
+  special: Creatures with vulnerability to bludgeoning damage take 150\% more damage from this attack.
+- name: Slam
+  type: mw
+  ability: str
+  onhit: "[roll 2 6 str] bludgeoning damage."
+flavor: Thick stone protrusions cover this zombie's exposed flesh.
+description:
+- header: Elemental Animus
+  text: >
+   Stone zombies are created through a ritual that binds an earth elemental to a rotting corpse. They are much tougher than the regular variety, being stronger, faster,
+   and better protected.

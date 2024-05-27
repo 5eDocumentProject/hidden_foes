@@ -1,0 +1,55 @@
+name: Spellquencher Golem
+headername: Golem, Spellquencher
+size: large
+type: construct
+cr: 12
+hd: 20
+ac:
+- 8
+- natural armor
+speed:
+ land: 35
+stats:
+ str: 19
+ dex: 7
+ con: 18
+ int: 3
+ wis: 12
+ cha: 10
+saves:
+- str
+- con
+resist:
+- all damage from spells
+- bludgeoning, piercing, and slashing from magical weapons
+immune:
+- poison
+- psychic
+senses:
+- truesight 60 ft
+languages:
+- nospeak
+- common
+abilities:
+- name: Immutable Form
+- name: Superior Magic Resistance
+  effect: >
+   The golem completely ignores all effects from spells cast with a spell slot of 5th level or lower. The golem gets advantage on all
+   saving throws to resist magical effects.
+- name: Magic Weapons
+actions:
+- name: Multiattack
+  effect: The golem makes two slam attacks.
+attacks:
+- name: Slam
+  type: mw
+  ability: str
+  onhit: >
+   [roll 4 10 str] bludgeoning damage plus [roll 1 8] necrotic damage, and the target automatically fails any saving throws that it makes
+   to maintain concentration on spells.
+flavor: This hulking black golem seems to absorb the light around it.
+description:
+- header: War Machines
+  text: >
+   The spellquencher golems were created during a long-forgotten war for one purpose: to kill spellcasters. The stories of the war say
+   that the golems were turned loose in the enemy's domain, hunting and destroying the warrior-mages of the opposing empire.

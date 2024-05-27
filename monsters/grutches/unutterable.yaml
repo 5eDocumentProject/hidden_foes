@@ -1,0 +1,33 @@
+name: Unutterable Grutch
+headername: Grutch, Unutterable
+group: Grutch
+sortindex: 0
+size: small
+cr: 1/8
+ac:
+- 1
+- natural armor
+hd: 2
+speed:
+ land: 30
+stats:
+ str: 5
+ dex: 13
+ con: 12
+ int: 8
+ wis: 14
+ cha: 10
+vulnerable:
+- fire
+senses:
+- darkvision 60 ft.
+abilities:
+- name: Transformation
+  effect: >
+   As soon as the unutterable grutch hears the name of its species spoken out loud, it transforms into a [monster Greater Grutch]. If the space the grutch is in is too small to
+   accomodate a Large creature, the transformation is delayed until there is enough space.
+attacks:
+- name: Bite
+  type: mw
+  ability: dex
+  onhit: "[roll 1 4 dex] slashing damage."

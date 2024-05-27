@@ -1,0 +1,23 @@
+name: Ink Serpent
+level: 2
+school: transmutation
+ritual:
+casting_time: 1 minute
+range: touch
+components: V, S, M (black ink worth at least 20 gc, or colored ink worth at least 50 gc, which the spell consumes)
+duration: until dispelled or triggered
+classes:
+- bard
+- cleric
+- sorcerer
+- warlock
+- wizard
+effect: >
+ When you cast this spell, you cover up to one square foot of surface area with text, using the material component. The first time
+ that a creature reads the text, the ink slides off the page and coalesces into an [monster Ink Serpent] of the same color as the ink, which
+ attacks the triggering creature. When you cast this spell, you may set conditions for creatures that don’t trigger the spell,
+ such as those who say a certain password. When the ink serpent or the creature that triggered the spell dies, the spell ends.
+higher_levels: >
+ If you cast this spell using a spell slot of 6th level or higher, when the creature that triggered the spell dies, if the ink serpent
+ is still alive, it returns to the surface the spell was cast on and disperses back into text, allowing the spell to be triggered
+ multiple times.

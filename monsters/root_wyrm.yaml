@@ -1,0 +1,70 @@
+name: Root Wyrm
+size: huge
+type: plant
+cr: 10
+ac:
+- 6
+- natural armor
+hd: 10
+speed:
+ land: 40
+ burrow: 30
+stats:
+ str: 21
+ dex: 7
+ con: 18
+ int: 2
+ wis: 11
+ cha: 4
+saves:
+- str
+- con
+- wis
+immune:
+- psychic
+resist:
+- cold
+- necrotic
+- bludgeoning and piercing from non-magical weapons
+vulnerable:
+- poison
+- fire
+- slashing from magical weapons
+senses:
+- blindsight 60 ft. (blind beyond this radius)
+- tremorsense 120 ft
+abilities:
+- name: Earth Eater
+  effect: The root wyrm does double damage to wooden or earthen structures, creatures of elemental earth, and plants.
+actions:
+- name: Multiattack
+  effect: The root wyrm makes one bite attack and one crush attack.
+attacks:
+- name: Bite
+  type: mw
+  ability: str
+  onhit: >
+   [roll 6 6 str] slashing damage, and the target must make a [save w/str str] or be swallowed by the wyrm. The wyrm can only
+   swallow Large or smaller creatures. Swallowed creatures are blinded and restrained, have total cover against effects originating
+   from outside the wyrm, and take [roll 3 4] necrotic damage at the start of each of the wyrm’s turns. The wyrm can choose
+   to regurgitate any or all swallowed creatures at any time, but no amount of damage will force the wyrm to regurgitate. Once
+   the wyrm has been slain, any creatures swallowed by it can spend 10 feet of movement to escape the corpse, exiting prone.
+- name: Crush
+  type: mw
+  reach: 10
+  ability: str
+  onhit: "[roll 2 8 str] bludgeoning damage and the target must succeed on a [save w/str str] or be knocked prone."
+habitat:
+- forest
+- underground
+flavor: A huge, gnarled, rootlike monstrosity erupts from the ground, its eyeless head swinging back and forth in its search for prey.
+description:
+- header: Uncertain Origins
+  text: >
+   No one is certain where the first root wyrms came from. Some claim that a sect of druids created them to drive away a nest of
+   purple worms that was intruding on the druid's territory. Others say that root wyrms have always existed and are just a natural
+   creature.
+- header: Carnivorous Plants
+  text: >
+   Root wyrms can live on just the soil that they burrow through, but they much prefer to consume fresher matter as a supplement to their diet.
+   The wyrms seem to have a particular fondness for creatures of elemental earth, but will willingly eat anything that moves, and some things that don't.

@@ -1,0 +1,46 @@
+name: Sigiled Manta
+size: large
+type: beast
+cr: 1
+hd: 12
+speed:
+ land: 0
+ swim: 40
+stats:
+ str: 16
+ dex: 13
+ con: 13
+ int: 4
+ wis: 13
+ cha: 11
+abilities:
+- name: Magic Resistance
+- name: Aquatic
+reactions:
+- name: Protective Aura
+  uses: 3/day
+  effect: >
+   This reaction can be taken when the manta or a creature within 10 feet of it is targeted by an attack. For the next minute, the manta and all creatures within 10 feet of it get a +2 bonus to AC.
+attacks:
+- name: Tail Barb
+  type: mw
+  ability: str
+  onhit: "[roll 1 4 str] piercing damage."
+habitat:
+- aquatic
+flavor: This manta's hide is covered in arcane glyphs.
+description:
+- header: Runemarked
+  text: >
+   The markings on a sigiled manta's skin grant it the power to use several magical effects. Because of the magical nature of their hides, there is a thriving market for
+   manta skins. An intact manta hide can be worth up to 100 gc.
+- header: Group Shielding
+  text: >
+   Sigiled mantas can produce a protective shield around themselves. When several mantas swim in tight formation, the shields overlap, increasing their defensive power.
+innate-spellcasting:
+ ability: wis
+ spells:
+ - frequency: 3/day
+   spells:
+   - Magic Missile
+   - Healing Word

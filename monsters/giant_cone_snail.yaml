@@ -1,0 +1,38 @@
+name: Giant Cone Snail
+size: large
+type: beast
+one_column: True
+cr: 3
+ac:
+- 5
+- natural armor
+hd: 15
+speed:
+ land: 20
+ climb: 20
+ burrow: 5
+stats:
+ str: 15
+ dex: 6
+ con: 13
+ int: 1
+ wis: 10
+ cha: 1
+abilities:
+- name: Spider Climb
+attacks:
+- name: Harpoon
+  type: rw
+  range: 5/10
+  ability: str
+  onhit: >
+    [roll 1 4 str] piercing damage, and the target must make a [save w/con con]. On a failure, the creature takes [roll 3 6]
+    poison damage and is paralyzed for one minute. On a success, the creature takes half as much damage and is not paralyzed.
+flavor: This beautiful snail slides forward, its siphon tube waving in search of prey.
+description:
+- header: Paralyzing Venom
+  text: >
+   Giant cone snails may appear to be harmless from a distance, but they wield a potent paralytic venom that they inject through a
+   harpoon-like projectile fired from their snouts.
+habitat:
+- aquatic

@@ -1,0 +1,61 @@
+name: Solar Spirit
+size: medium
+type: celestial
+alignment: lawful good
+cr: 2
+hd: 7
+ac:
+- 4
+- half plate
+speed:
+ land: 35
+ fly: 80
+saves:
+- dex
+- wis
+- cha
+stats:
+ str: 14
+ dex: 16
+ con: 15
+ int: 12
+ wis: 14
+ cha: 15
+immune:
+- fire
+- radiant
+- poison
+vulnerable:
+- necrotic
+cond-immune:
+- blinded
+languages:
+- common
+- celestial
+senses:
+- darkvision 60 ft.
+abilities:
+- name: Corruption
+  effect: >
+   If the solar spirit is killed by necrotic damage, it must make a [basicsave w/con 15]. If it fails, it reanimates as a [monster
+   Tarnished Spirit] with half its health.
+- name: Radiance
+  effect: >
+   The solar spirit sheds bright light in a 10-foot radius and dim light for an additional 30 feet. This light counts as sunlight.
+attacks:
+- name: Radiant Longsword
+  type: mw
+  ability: str
+  onhit: "[roll 1 8 str] slashing damage plus [roll 1 8] radiant damage."
+flavor: This angelic creature appears as a winged, glowing knight clad in golden armor.
+description:
+- header: Soldiers of the Sun
+  text: >
+   Solar spirits are summoned by priests of sun deities to serve as soldiers. During the Shadow Wars, armies of thousands of solar
+   spirits were deployed against the forces of darkness. The biggest weakness of solar spirits is that they can be warped into evil
+   reflections of their former existence by sufficient quantities of dark energy.
+- header: Obedient Servants
+  text: >
+   Although solar spirits are intelligent and capable of formulating their own tactics, they exist to serve as obedient soldiers.
+   As such, they follow any commands to the best of their ability and stick to such instructions until destroyed, even carrying
+   out obviously suicidal missions if necessary.

@@ -1,0 +1,41 @@
+name: Giant Sentry Vine
+headername: Sentry Vine, Giant
+group: Sentry Vine
+size: large
+cr: 4
+ac:
+- 3
+- natural armor
+hd: 10
+speed:
+ land: 10
+stats:
+ str: 16
+ dex: 11
+ con: 14
+ int: 1
+ wis: 3
+ cha: 2
+senses:
+- tremorsense 120 ft. (blind beyond this radius)
+attacks:
+- name: Constrict
+  type: mw
+  reach: 10
+  ability: str
+  onhit: >
+   [roll 2 8 str] bludgeoning damage and the target is grappled by the sentry vine. While the target is grappled, it is also
+   restrained and the sentry vine cannot constrict another target.
+- name: Exploding Seed Pod
+  type: rw
+  range: 60/120
+  ability: dex
+  onhit: >
+   [roll 1 10] thunder damage plus [roll 3 4] piercing damage, and all creatures within 10 feet of the target must make a
+   [save w/dex con], taking half damage on a failure or no damage on a success.
+variants:
+- name: Unusual Sentry Vine
+  mods: >
+   Use the variants from the sentry vine stat block, but with slight modification. The flowering sentry vine has a CR of [cr 4] instead
+   of 0. The hydra sentry vine gains six additional hit dice, increasing its max hit points to [roll 16 10 32], loses a pod when
+   it takes 20 or more slashing damage in a single turn, and has a CR of [cr 9].

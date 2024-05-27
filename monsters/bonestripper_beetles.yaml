@@ -1,0 +1,64 @@
+name: Bonestripper Beetle Swarm
+size: medium
+swarm: tiny
+type: beast
+cr: 2
+ac:
+- 2
+- natural armor
+hd: 7
+speed:
+ land: 30
+ climb: 30
+stats:
+ str: 1
+ dex: 15
+ con: 11
+ int: 1
+ wis: 11
+ cha: 5
+resist:
+- acid
+- necrotic
+- piercing
+- slashing
+- bludgeoning
+vulnerable:
+- cold
+- fire
+cond-immune:
+- charmed
+- frightened
+- paralyzed
+- petrified
+- prone
+- restrained
+abilities:
+- name: Potent Poison
+  effect: Undead with flesh (such as zombies) are not immune to the swarm's poison.
+- name: Spider Climb
+attacks:
+- name: Bites
+  type: mw
+  reach: 0
+  ability: dex
+  target: all creatures in the swarm's space
+  onhit: >
+   [roll 4 6] slashing damage and the target must make a [save w/con con], becoming poisoned on a failure. While poisoned in this way,
+   a creature takes [roll 2 4] necrotic damage at the start of each of its turns as its flesh rots off its bones. A poisoned creature
+   may repeat the saving throw at the end of each of its turns, ending the effect on a success. If a creature dies while poisoned, it
+   continues to rot at an incredible rate, being reduced to bare bones in [roll 1 4] minutes. Undead take double damage from
+   the poison.
+  special: >
+   If the swarm has half of its hit points or fewer, damage from the attack and poison is halved (but creatures already poisoned still
+   take full damage).
+flavor: A mass of black-and-white beetles roils across the ground.
+description:
+- header: Bone Cleaners
+  text: >
+   Bonestripper beetles are used by necromancers and undertakers to prepare skeletons for animation or burial. Criminals also pay a high
+   price to dispose of corpses by having them eaten by bonestripper beetles.
+- header: Transformed Fauna
+  text: >
+   Bonestripper beetles were created by performing a series of arcane and alchemical experiments on ordinary carrion beetles. The
+   modifications greatly increased the speed with which the beetles can clean a skeleton.

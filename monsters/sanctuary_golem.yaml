@@ -1,0 +1,68 @@
+name: Sanctuary Golem
+headername: Golem, Sanctuary
+size: large
+type: construct
+cr: 5
+hd: 12
+ac:
+- 6
+- natural armor
+speed:
+ land: 30
+stats:
+ str: 16
+ dex: 7
+ con: 17
+ int: 3
+ wis: 14
+ cha: 15
+saves:
+- str
+- con
+- wis
+- cha
+immune:
+- poison
+- psychic
+resist:
+- necrotic
+- radiant
+senses:
+- truesight 60 ft
+- darkvision 120 ft
+languages:
+- nospeak
+- celestial
+- common
+- infernal
+abilities:
+- name: Immutable Form
+- name: Magic Resistance
+- name: Pacifying Presence
+  effect: >
+   Before any creature within 30 feet makes an attack or casts a spell, that creature must make a [save w/cha cha]. On a failure, that
+   creature must choose a different action to take.
+actions:
+- name: Multiattack
+  effect: The golem makes two retributive smash attacks.
+attacks:
+- name: Retributive Smash
+  type: mw
+  ability: str
+  reach: 10
+  onhit: >
+   [roll 2 8 str] bludgeoning damage. If the target has dealt damage with an attack or spell within the last minute, it must make
+   a [save w/cha cha], taking [roll 2 6] radiant damage and being stunned for [roll 1 4] rounds on a failure, or half as much damage
+   and not being stunned on a success.
+flavor: Sanctuary golems are employed in temples to prevent anyone from breaking the laws of peace within.
+description:
+- header: Peacekeepers
+  text: >
+   Sanctuary golems are mostly used by lawfully-aligned clerics to enforce the temple code of conduct. Each golem radiates an aura of
+   calm, making it difficult to take any hostile actions, and its attacks are charged with holy energy against those who break the
+   temple peace.
+- header: Varied Appearance
+  text: >
+   The appearance of a sanctuary golem is largely dependent on the faith of the clerics that crafted it. For example, a temple of a
+   nature-oriented deity might have sanctuary golems carved from wood, whereas a temple of a sea god might have sanctuary golems
+   cobbled together from bits of coral.

@@ -1,0 +1,58 @@
+name: Dragontooth Soldier
+size: medium
+type: construct
+cr: 2
+hd: 3
+ac:
+- 20
+- natural armor
+- shield
+speed:
+ land: 30
+stats:
+ str: 14
+ dex: 10
+ con: 15
+ int: 1
+ wis: 10
+ cha: 1
+saves:
+- str
+- con
+immune:
+- poison
+- psychic
+senses:
+- darkvision 60 ft
+languages:
+- nospeak
+- common
+- draconic
+abilities:
+- name: Magic Resistance
+- name: Draconic Origin
+  effect: >
+   The dragontooth soldier has a damage resistance and a damage vulnerability determined by the type of dragon the tooth was from.
+   [table ccc
+   Dragon & Resistance & Vulnerability &
+   Blue & Lightning & Cold &
+   Brass & Fire & Cold &
+   Bronze & Lightning & Acid &
+   Copper & Acid & Thunder &
+   Gold & Fire & Cold &
+   Green & Poison & Necrotic &
+   Red & Fire & Cold &
+   Silver & Cold & Fire &
+   White & Cold & Fire &
+   Zinc & Lightning & Cold]
+attacks:
+- name: Dragon Blade
+  type: mw
+  ability: str
+  onhit: "[roll 1 8 str] slashing daamge plus [roll 3 6] damage of same type as the resistance from the draconic origin trait."
+flavor: This construct is crafted from a whitish material, but clad in colorful scale armor.
+description:
+- header: Enchanted Teeth
+  text: >
+   Dragon teeth can be enchanted by a certain ritual so that, when thrown on the ground, they sprout into soldiers ready to do the
+   bidding of whoever summoned them. When slain, a dragontooth soldier and its equipment crumble to dust.

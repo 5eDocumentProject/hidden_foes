@@ -1,0 +1,87 @@
+name: Rusted Soldier
+size: medium
+type: construct
+cr: 1/4
+ac:
+- 4
+- natural armor
+hd: 10
+speed:
+ land: 30
+stats:
+ str: 13
+ dex: 7
+ con: 10
+ int: 1
+ wis: 9
+ cha: 8
+immune:
+- poison
+- psychic
+senses:
+- darkvision 45 ft.
+languages:
+- nospeak
+- common
+abilities:
+- name: Variants
+  effect: >
+   Some rusted soldiers have physiological variations. You can roll 1d8 on the following table to select such deviations.
+   [numberlist
+   Adds 1 to its rolls for the Unstable trait (max 6) &
+   Int score increases to [stat 3] &
+   Has blindsight out to 45 ft. instead of darkvision &
+   Makes [roll 1 3] slash attacks instead of two when it takes the Multiattack action &
+   Gains a climbing speed of 20 ft. &
+   Con score increases to [stat 12], giving the soldier 10 additional hit points &
+   Attacks deal 1d6 additional damage at distance instead of 1d4 &
+   Roll twice]
+- name: Unstable
+  effect: >
+   At the start of the rusted soldier's turn, as long as it is not incapacitated, roll 1d6 and consult the following table.
+   [numberlist
+   The soldier takes 1d4 damage &
+   The soldier's movement speed is permanently decreased by 5 feet &
+   The soldier takes 1d4 damage and its movement speed is increased by 5 feet for its next turn &
+   The soldier gains 1d4 temporary hit points &
+   The soldier takes 1d4 damage and its next attack deals 1d4 additonal damage &
+   The soldier heals 1d4 hit points]
+actions:
+- name: Multiattack
+  effect: The rusted soldier makes two slash attacks.
+attacks:
+- name: Slash
+  type: mw
+  reach: 10
+  ability: str
+  onhit: >
+   [roll 1 6 str] slashing damage. This attack deals an additional [roll 1 4] slashing damage if the target is more than 5
+   feet away.
+  special: >
+   Hit or miss, roll 1d6. On a 1, one of the soldier's slash attacks no longer does additional damage against targets that are
+   further away, and can only target creatures that are more than 5 feet away.
+flavor: >
+ A simple bronze construct shambles forward, its cylindrical arms tipped with sharp blades. Rust-colored patches of mossy sludge coat
+ its frame.
+description:
+- header: Products of a Fallen City
+  text: >
+   An ancient city-state developed a method for manufacturing huge numbers of mechanical soldiers. Vast machines, tended by a fleet
+   of service constructs, endlessly churned out these soldiers. Eventually, the city-state collapsed, and a strange rusting disease
+   infested the once-mighty city.
+- header: Faulty Machines
+  text: >
+   All the metal in the city began to corrode, including the manufacturing plants. However, instead of crumbling into dust, the
+   self-repair systems were able to combat the rust that contaminated the mechanical factories. Every once in a while, though,
+   the repair systems would make minor mistakes in the reconstruction of the factories, and over the years these small errors added up.
+   Eventually, the machines were building soldiers that only worked half of the time, and those that were functional very often had 
+   structural problems (three arms, extra/no eyes, self-destructive tendencies, etc.).
+- header: Short-lived Deviants
+  text: >
+   Since the factories were still running at full capacity, it did not take long before the remnants of the city were full of these
+   mutant soldiers, and between the mechanical deficiencies and the all-consuming rust, a single construct would hardly last a
+   week before breaking down and being recycled through the great foundries and factories into a new soldier.
+- header: No End in Sight
+  text: >
+   The few researchers that have managed to survive the mechanical hordes speculate that, eventually, the manufacturing facilities will
+   be too badly damaged to possibly fabricate a functional construct... but that day is still many decades away.

@@ -1,0 +1,51 @@
+name: Quicksilver Ooze
+size: medium
+type: ooze
+hd: 11
+cr: 3
+speed:
+ land: 30
+stats:
+ str: 16
+ dex: 5
+ con: 12
+ int: 2
+ wis: 1
+ cha: 3
+resist:
+- acid
+- piercing and slashing from non-silvered, non-magical weapons
+immunities:
+- bludgeoning, piercing, and slashing from silvered weapons
+senses:
+- blindsight 60 ft. (blind beyond this radius)
+abilities:
+- name: Amorphous
+- name: Silver Form
+  effect: The quicksilver ooze's attacks count as silvered.
+- name: Spider Climb
+actions:
+- name: Multiattack
+  effect: The quicksilver ooze makes two pseudopod attacks.
+attacks:
+- name: Pseudopod
+  type: mw
+  ability: str
+  onhit: >
+   [roll 2 6 str] bludgeoning damage plus [roll 1 6] acid damage plus [roll 1 4] psychic damage and the target must make
+   a [save w/con con] or be poisoned and have its proficiency bonus reduced by one. [spell Lesser Restoration] or similar magic restores
+   one point of lost proficiency bonus per casting, and [spell Greater Restoration] or similar magic completely restores the creature’s
+   proficiency bonus.
+  special: >
+   If this attack kills a creature, there is a 25\% chance that the slain creature reanimates as a gibbering mouther in
+   [roll 1 4] rounds.
+flavor: A pool of what appears to be silver metal suddenly lunges forward.
+description:
+- header: Ancient Origins
+  text: >
+   The first quicksilver oozes were guards for an underground tomb. From there, they spread and proliferated throughout the region, and
+   now can be found in any dark, damp place.
+- header: Silver Immunity
+  text: >
+   Because of their silvery bodies, quicksilver oozes are completely immune to attacks made with silvered weapons, and their attacks
+   affect creatures in the same way as silvered weapons would.

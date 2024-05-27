@@ -1,0 +1,54 @@
+name: Tarnished Spirit
+size: medium
+type: celestial
+alignment: neutral evil
+cr: 2
+hd: 8
+ac:
+- 4
+- natural armor
+speed:
+ land: 30
+stats:
+ str: 16
+ dex: 13
+ con: 15
+ int: 13
+ wis: 14
+ cha: 13
+saves:
+- str
+- con
+- wis
+languages:
+- celestial
+- common
+vulnerable:
+- radiant
+immune:
+- necrotic
+resist:
+- cold
+- fire
+senses:
+- darkvision 60 ft
+abilities:
+- name: Redemption
+  effect: >
+   If the tarnished spirit is killed by radiant damage, it must make a [basicsave w/con 15]. If it succeeds, it reanimates as a
+   [monster Solar Spirit] with half its health.
+- name: Liberator's Blessing
+  effect: >
+   The creature that kills the tarnished spirit regains [roll 2 4] hit points and deals an additional [roll 1 4] radiant damage
+   on their attacks for the next three turns.
+attacks:
+- name: Dark Longsword
+  type: mw
+  ability: str
+  onhit: "[roll 1 8 str] slashing damage plus [roll 2 4] necrotic damage."
+flavor: A faint golden light glimmers from between the coal-like plates of this knight's armor.
+description:
+- header: Bound Spirits
+  text: >
+   Tarnished spirits are created when solar spirits are encased in shadow magics, supressing their innate light and good alignment under
+   dark plates of armor. However, tarnished spirits can be restored to their former nature by blasting them with radiant energy.

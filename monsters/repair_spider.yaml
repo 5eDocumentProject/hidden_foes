@@ -1,0 +1,59 @@
+name: Repair Spider
+size: small
+type: construct
+alignment: lawful neutral
+cr: 1/4
+ac:
+- 2
+- natural armor
+hd: 3
+speed:
+ land: 30
+ climb: 30
+stats:
+ str: 8
+ dex: 14
+ con: 13
+ int: 4
+ wis: 10
+ cha: 10
+immune:
+- poison
+- psychic
+senses:
+- darkvision 60 ft.
+languages:
+- nospeak
+- common
+abilities:
+- name: Spider Climb
+- name: Web Sense
+- name: Web Walker
+actions:
+- name: Repair
+  uses: recharge 4-6
+  effect: >
+   Target creature or structure within 5 feet regains [roll 1 4] hit points. Living creatures can only benefit from this ability once
+   per day. Structures and constructs targeted by this ability regain twice as many hit points.
+attacks:
+- name: Web
+  type: rw
+  range: 15/30
+  ability: dex
+  onhit: >
+   The target is restrained by metallic strands of webbing. As an action, the restrained creature can make a DC 13 Strength check,
+   bursting through the webbing on a success. The webbing can also be attacked and destroyed (AC 11; hp 5; immunity to bludgeoning,
+   poison, and psychic damage).
+- name: Bite
+  type: mw
+  ability: dex
+  onhit: "[roll 1 4 dex] piercing damage."
+flavor: A bronze spider skitters busily across the city, repairing any damage it might see.
+description:
+- header: Automated Repair System
+  text: >
+   The repair spiders were designed to constantly be on the lookout for structural damage in buildings. If they found any damage, they
+   are fully equipped to repair it, all without needing human assistance. They worked so well that, even long after the humans had left,
+   the spiders kept working, keeping the ancient city from falling apart.
+habitat:
+- urban

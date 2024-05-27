@@ -1,0 +1,35 @@
+name: Grutch
+shortname: grutch
+type: fey
+sorttype: index
+headers:
+ mark: group
+ toc: monster
+alignment: chaotic neutral
+languages:
+- grutch
+vulnerable:
+- thunder
+resist:
+- lightning
+- poison
+abilities:
+- name: Keen Hearing
+- name: Unutterable
+  effect: >
+   The grutch can understand the name of its species in all languages. Any creature that knows a language and can see the grutch
+   automatically knows what they’re called. If the grutch hears the name of its species spoken aloud, it is compelled to slay the speaker.
+flavor: This small, grey, boulderish creature seems to be listening to your every word.
+description:
+- header: Mischevious Fey
+  text: >
+   Grutches live around small towns, spending most of their time eating rats and causing mischief. Although their rat-eating prowess
+   is a great help to most farmers, people still see them as bad luck, in large part because of the inherent danger of having grutches
+   nearby.
+- header: Transformation
+  text: >
+   If a grutch ever hears its name spoken out loud, it immediately transforms into a being of much greater power. For obvious reasons,
+   every grutch's fondest dream is to be promoted to a greater grutch, and so many of their tricks are simply efforts to get the
+   exasperated villagers to say the magic word.
+habitat:
+- urban

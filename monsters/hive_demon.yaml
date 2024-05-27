@@ -1,0 +1,95 @@
+name: Hive Demon
+headername: Demon, Hive
+size: large
+type: fiend
+tags:
+- demon
+alignment: chaotic evil
+cr: 9
+ac:
+- 8
+- natural armor
+- swarm of insects
+hd: 18
+speed:
+ land: 30
+ fly: 60
+stats:
+ str: 16
+ dex: 15
+ con: 16
+ int: 11
+ wis: 13
+ cha: 10
+saves:
+- dex
+- con
+- wis
+vulnerable:
+- cold
+immune:
+- poison
+senses:
+- darkvision 60 ft.
+languages:
+- common
+- abyssal
+abilities:
+- name: Hive Mind
+  effect: The hive demon is immune to all mind-reading or mind-control effects.
+- name: Stolen Venom
+  effect: >
+   Whenever the hive demon would suffer an effect that inflicts the poisoned condition and has a \"while poisoned in this way...\" clause,
+   the next time the demon inflicts the poisoned condition, the \"while poisoned in this way…\" effect also applies. If the stolen effect
+   requires a saving throw, the save DC is the same as the DC from the original source. The poisoned condition does not end when the
+   stolen effect ends.
+- name: Swarm Nexus
+  effect: >
+   The hive demon is surrounded by a cloud of abyssal insects. At the start of the demon's turn, it can make a free Biting Swarm attack
+   against any number of creatures within 20 feet. The swarm also provides the demon with a +6 AC bonus. At the start of the demon's
+   turn, it can distribute this bonus among any number of creatures within 20 feet of it. The bonus remains distributed in this way
+   until the start of the demon's next turn. If the demon has half health or less, the total AC bonus is reduced to +3.
+actions:
+- name: Multiattack
+  effect: The hive demon makes two claw attacks and a bite attack.
+attacks:
+- name: Bite
+  type: mw
+  ability: str
+  onhit: >
+   [roll 2 8 str] piercing damage and the target must make a [save w/con con], taking [roll 2 10] poison damage on a failure,
+   or half as much damage on a success.
+- name: Claw
+  type: mw
+  ability: str
+  reach: 10
+  onhit: "[roll 3 8 str] slashing damage."
+- name: Biting Swarm
+  type: rw
+  ability: con
+  range: 60
+  onhit: >
+   [roll 2 6] piercing damage and the target must succeed on a [save w/con con] or take [roll 2 6] poison damage, be poisoned for
+   ten minutes, and suffer from a random effect on the table below. An affected creature can repeat the saving throw at the end of each of
+   its turns, ending the effect on itself on a success. A creature can only suffer from one of the effects on the table at a time.
+  special: >
+   If the hive demon has half its health or less, the attack roll has disadvantage and creatures have advantage on saving throws against
+   the poison effect.
+   [numberlist
+   While poisoned in this way, the target's movement speed is halved. &
+   While poisoned in this way, the target is blind. &
+   While poisoned in this way, the target takes [roll 1 4] necrotic damage at the start of each of their turns. &
+   While poisoned in this way, the target takes [roll 1 4] acid damage at the start of each of their turns. &
+   While poisoned in this way, the target takes [roll 1 6] poison damage at the start of each of their turns. &
+   While poisoned in this way, the target is vulnerable to poison damage.]
+flavor: This monolithic demon is riddled with holes through which countless demonic insects swarm.
+description:
+- header: Swarm Keepers
+  text: >
+   Hive demons host a huge swarm of demonic insects, with which they can communicate telepathically. The swarm is capable of transmitting
+   a mild toxin through their bites, and can also provide protection simply by swarming around and on a creature, giving them a semblance
+   of chitinous armor.
+- header: Poison Harvesters
+  text: >
+   Hive demons have the unique ability to steal poisons from other creatures, storing them up before inflicting them on their enemies
+   either through their venomous bite or their demonic swarm.

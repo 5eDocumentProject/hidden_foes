@@ -1,0 +1,59 @@
+name: Tome Guardian
+size: medium
+type: construct
+cr: 2
+hd: 12
+ac: 
+- 5
+- natural armor
+speed:
+ land: 30
+stats:
+ str: 15
+ dex: 8
+ con: 15
+ int: 4
+ wis: 4
+ cha: 3
+immune:
+- poison
+- psychic
+vulnerable:
+- fire
+languages:
+- nospeak
+- common
+senses:
+- darkvision 60 ft
+abilities:
+- name: Immutable Form
+- name: Magic Resistance
+- name: Chain Core
+  effect: >
+   The tome ensconced in the guardian’s chest is held in place by four chains. Casting [spell Knock] on the guardian unlocks
+   one of the chains and deals 20 damage to the guardian. If the tome guardian is incapacitated, a creature can make a DC 20
+   Dexterity check to unlock one of the chains. On a success, the tome guardian takes 20 damage.
+actions:
+- name: Multiattack
+  effect: The tome guardian makes two chainblade attacks.
+- name: Shockwave
+  effect: >
+   All creatures within 15 feet of the tome guardian must make a [save w/str con], taking [roll 1 4] force damage and being pushed
+   ten feet away from the guardian on a success, or half as much damage and not being pushed on a success.
+attacks:
+- name: Chainblade
+  type: mw
+  ability: str
+  reach: 10
+  onhit: "[roll 2 6 str] slashing damage."
+flavor: This golem's hollow chest contains a heavy tome held in place by four thick chains.
+description:
+- header: Book Keepers
+  text: >
+   Each tome guardian protects a single book, which is held safely within the construct's chest by strong chains. The guardian
+   will only release its tome when ordered to do so by its creator.
+- header: Chain Core
+  text: >
+   The chains that hold the guardian's tome in place also form the construct's weapons; the loose end of each chain is attached to a
+   sword blade, allowing the guardian to wield them like flails. The guardian can also be badly damaged by forcefully unlocking its
+   chains.

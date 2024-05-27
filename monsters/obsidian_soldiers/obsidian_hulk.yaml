@@ -1,0 +1,34 @@
+name: Obsidian Hulk
+group: Obsidian Soldiers
+shortname: hulk
+size: large
+cr: 3
+ac:
+- 5
+- natural armor
+hd: 16
+speed:
+ land: 30
+saves:
+- str
+- con
+stats:
+ str: 17
+ dex: 7
+ con: 13
+ int: 2
+ wis: 10
+ cha: 3
+senses:
+- darkvision 60 ft
+languages:
+- nospeak
+- common
+actions:
+- name: Multiattack
+  effect: The obsidian hulk makes three smash attacks.
+attacks:
+- name: Smash
+  type: mw
+  ability: str
+  onhit: "[roll 1 12 str] bludgeoning damage plus 1 acid damage."

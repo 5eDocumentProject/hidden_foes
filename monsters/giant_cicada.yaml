@@ -1,0 +1,36 @@
+name: Giant Cicada
+size: small
+type: beast
+one_column: True
+cr: 1/8
+ac:
+- 1
+- natural armor
+hd: 2
+speed:
+ land: 5
+ fly: 40
+stats:
+ str: 6
+ dex: 8
+ con: 10
+ int: 1
+ wis: 9
+ cha: 3
+immune:
+- thunder
+actions:
+- name: Deafening Drone
+  effect: >
+   All creatures within 10 feet of the cicada that can hear it must make a [save w/con con], taking [roll 3 4] thunder damage and
+   being deafened for one minute on a failure, or [roll 2 4] thunder damage and not being deafened on a success.
+flavor: An insect the size of a dog buzzes clumsily past.
+description:
+- header: Short-Lived
+  text: Giant cicadas spend most of their lives in a larval stage underground, only living in adult form for a week or two at most.
+- header: Peaceful but Loud
+  text: >
+   Giant cicadas are almost harmless, but annoy everyone with their constant buzzing drone. If threatened, they can injure or deafen
+   creatures at close range with an extra-loud burst of buzzing.
+habitat:
+- forest

@@ -1,0 +1,41 @@
+name: Greater Grutch
+headername: Grutch, Greater
+group: Grutch
+sortindex: 1
+size: large
+cr: 5
+ac:
+- 5
+- natural armor
+hd: 18
+speed:
+ land: 30
+stats:
+ str: 16
+ dex: 11
+ con: 14
+ int: 8
+ wis: 14
+ cha: 10
+resist:
+- acid
+senses:
+- blindsight 60 ft.
+actions:
+- name: Multiattack
+  effect: The grutch makes two crush attacks and either makes a bite attack or takes a choke action.
+- name: Choke
+  effect: >
+   One creature within 30 feet must make a [basicsave w/cha 16]. On a failure, that creature starts choking (page 183 in the Player’s
+   Handbook). The affected creature can repeat the saving throw at the start of each of its turns, ending the effect on a success.
+   The effect also ends when the grutch dies, or when the grutch uses this ability on another creature.
+attacks:
+- name: Bite
+  type: mw
+  ability: str
+  onhit: "[roll 2 8 str] slashing damage."
+- name: Crush
+  type: mw
+  ability: str
+  reach: 10
+  onhit: "[roll 1 12 str] bludgeoning damage."

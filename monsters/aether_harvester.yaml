@@ -1,0 +1,65 @@
+name: Aether Harvester
+type: construct
+size: large
+hd: 18
+cr: 5
+immune:
+- force
+- poison
+- psychic
+speed:
+ land: 30
+stats:
+ str: 17
+ dex: 8
+ con: 14
+ int: 3
+ wis: 11
+ cha: 5
+ac:
+- 6
+- natural armor
+senses:
+- darkvision 60 ft
+saves:
+- str
+- con
+abilities:
+- name: Immutable Form
+- name: Harvesting Arrays
+  effect: >
+   When the aether harvester would take force damage, or if a spell of 1st level or higher is cast against the aether harvester,
+   its aether cannon attack automatically recharges. If the aether cannon is already charged, the harvester gains [roll 3 8]
+   temporary hit points instead.
+- name: Detect Magic
+  effect: The aether harvester is under the effects of a constant [spell Detect Magic] spell.
+- name: Explosive Demise
+  effect: >
+   When the aether harvester is destroyed, its aether reservoirs explode. All creatures within 30 feet of the harvester must make a
+   [save w/dex con], taking [roll 3 8] force damage on a failure, or half as much damage on a success. If the aether cannon is
+   charged, the explosion deals an additional [roll 1 8] damage.
+attacks:
+- name: Slam
+  type: mw
+  ability: str
+  onhit: "[roll 2 6 str] bludgeoning damage."
+- name: Aether Cannon (Recharge 6)
+  type: rs
+  ability: con
+  range: 80
+  onhit: "[roll 3 8] force damage."
+actions:
+- name: Multiattack
+  effect: The harvester makes two slam attacks, an aether cannon attack (if available), and may take a Force Static action.
+- name: Force Static
+  effect: >
+   This action can only be taken if the harvester has 100 or more hit points, or if it has 4 or more temporary hit points. The aether
+   harvester takes 4 damage. All creatures within 15 feet of the harvester must succeed on a [save w/con con] or take
+   [roll 1 4] force damage and have disadvantage on all rolls for one round.
+flavor: Branching, netlike structures stand out from this stooped construct's back.
+description:
+- header: Energy Collectors
+  text: >
+   The aether harvesters sport large harvesting arrays on their backs, which collect latent magical energy from the surrounding
+   air. The harvesters store this energy in large internal batteries for transport back to their creators. If a harvester is
+   destroyed while fully charged, it explodes in a devastating burst of raw magic.

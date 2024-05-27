@@ -1,0 +1,48 @@
+name: Haunted Portrait
+size: small
+type: undead
+alignment: neutral evil
+cr: 1/4
+hd: 8
+ac:
+- 2
+- natural armor
+speed:
+ land: 0
+stats:
+ str: 1
+ dex: 1
+ con: 14
+ int: 10
+ wis: 10
+ cha: 15
+vulnerable:
+- fire
+resist:
+- bludgeoning, piercing, and slashing from non-magical weapons
+immune:
+- poison
+- psychic
+senses:
+- blindsight 30 ft
+languages:
+- telepathy 30 ft
+abilities:
+- name: Cursed Gaze
+  effect: >
+   Whenever a creature meets the eyes of the portrait from within 30 ft, that creature must make a [save w/con cha], taking [roll 1 6 cha]
+   psychic damage plus [roll 1 6] necrotic damage on a failure, or half as much damage on a success. Instead of dealing damage, the
+   portrait may choose to charm a creature that fails the saving throw. The portrait may only have one creature charmed in this way at
+   a time.
+actions:
+- name: Compel
+  effect: One creature within 30 ft must make a [save w/cha cha] or be forced to lock eyes with the portrait.
+habitat:
+- urban
+flavor: The eyes of this ancient oil portrait seem to track you around the room.
+description:
+- header: Ghosts of the Vain
+  text: >
+   Haunted portraits are created when an especially vain person dies, but cannot bear to be separated from their beautiful face, and so
+   end up haunting a portrait of themselves. Haunted portraits are not terribly dangerous, and since they can't move, they are very easy
+   to avoid once noticed.

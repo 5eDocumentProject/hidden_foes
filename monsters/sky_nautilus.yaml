@@ -1,0 +1,51 @@
+name: Sky Nautilus
+size: gargantuan
+type: beast
+cr: 6
+hd: 11
+ac:
+- 8
+- natural armor
+speed:
+ land: 0
+ hover: 30
+ swim: 30
+stats:
+ str: 19
+ dex: 7
+ con: 18
+ int: 3
+ wis: 10
+ cha: 8
+abilities:
+- name: Amphibious
+actions:
+- name: Multiattack
+  effect: The nautilus makes four tentacle attacks.
+- name: Retreat
+  effect: >
+   The nautilus can pull back into its shell and seal the opening. While retreated within its shell, the nautilus gains total cover
+   from all effects from outside its shell, cannot attack, and is blind to everything outside of its shell. The nautilus can emerge
+   from its shell as an action.
+attacks:
+- name: Tentacle
+  type: mw
+  reach: 10
+  ability: str
+  onhit: "[roll 1 6 str] bludgeoning damage."
+flavor: An enormous nautilus, as large as a cottage, drifts placidly through the air.
+description:
+- header: Floating Nautiluses
+  text: >
+   Sky nautiluses fly by means of several gas-filled chambers inside their shells. Although the nautiluses can survive indefinitely
+   in the air, most spend about half of their time in the water and the other half in the sky.
+- header: Peaceful Giants
+  text: >
+   Sky nautiluses do not prey on large or landbound creatures, and so rarely come into conflict with any intelligent races. If threatened,
+   their thick armor is usually enough to protect them until they can escape. Some races have built small fortresses on top of sky
+   nautiluses and used them as beasts of burden.
+variants:
+- name: Golden Nautilus
+  mods: >
+   These nautiluses have a thick coat of golden algae-like slime on their shells. They have +1 AC, +1 Con, resistance to cold damage,
+   and their fly and swim speeds are reduced by 5 feet.

@@ -1,0 +1,28 @@
+name: Obsidian Soldier
+group: Obsidian Soldiers
+shortname: soldier
+size: medium
+cr: 1/4
+hd: 8
+ac:
+- 4
+- natural armor
+speed:
+ land: 30
+stats:
+ str: 14
+ dex: 9
+ con: 11
+ int: 4
+ wis: 10
+ cha: 4
+senses:
+- darkvision 60 ft
+languages:
+- nospeak
+- common
+attacks:
+- name: Obsidian Longsword
+  type: mw
+  ability: str
+  onhit: "[roll 1 8 str] slashing damage plus 1 acid damage."

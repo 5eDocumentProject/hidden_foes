@@ -1,0 +1,60 @@
+name: Shadowbite Viper
+size: tiny
+type: monstrosity
+cr: 2
+ac:
+- 1
+- natural armor
+hd: 2
+speed:
+ land: 30
+ climb: 25
+stats:
+ str: 2
+ dex: 16
+ con: 12
+ int: 2
+ wis: 12
+ cha: 5
+skills:
+- stealth
+- perception
+saves:
+- dex
+immune:
+- necrotic
+vulnerable:
+- radiant
+senses:
+- darkvision 30 ft.
+attacks:
+- name: Bite
+  type: mw
+  ability: dex
+  onhit: >
+   1 piercing damage and the target must make a [save w/con con], taking [roll 2 4] necrotic damage plus [roll 2 4] poison
+   damage and being poisoned on a failure, or half as much damage and no poisoning on a success. While a creature is poisoned
+   in this way, it has resistance to radiant damage, receives half as much healing from all effects that would heal it, and it
+   takes [roll 2 4] necrotic damage plus [roll 2 4] poison damage at the start of each of its turns. A poisoned creature
+   may repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+actions:
+- name: Shadow Teleport
+  uses: recharge 6
+  effect: The shadowbite viper can teleport to any area of shadow or darkness within 30 feet.
+reactions:
+- name: Shadow Shifting
+  effect: >
+   When the shadowbite viper would be hit with an attack, if its shadow teleport ability is available, it can use its shadow
+   teleport and take half damage from the attack.
+flavor: This pitch-black serpent is surrounded by a faint, inky mist.
+description:
+- header: Dark Serpents
+  text: >
+   Shadowbite vipers originate from regions of steeped in shadow magic, from which they have emigrated (or been summoned) to the wider world.
+- header: Patient Predators
+  text: >
+   A shadowbite viper hunts by lurking unseen until some potential prey passes by, at which point the viper teleports as close to its
+   target as it can get before attacking. Shadowbite vipers rarely attack creatures larger than themselves unless provoked, but once
+   angered, they fight to the death.
+habitat:
+- underground

@@ -1,0 +1,48 @@
+name: Moon Fish
+size: small
+type: celestial
+one_column: True
+cr: 1/8
+hd: 6
+ac:
+- 1
+- natural armor
+speed:
+ land: 0
+ swim: 40
+stats:
+ str: 10
+ dex: 14
+ con: 12
+ int: 2
+ wis: 12
+ cha: 7
+immune:
+- radiant
+- poison
+resist:
+- cold
+- fire
+attacks:
+- name: Bite
+  type: mw
+  ability: str
+  onhit: "[roll 1 4 str] piercing damage."
+- name: Moonbeam
+  type: rs
+  ability: wis
+  range: 60
+  onhit: "[roll 1 6] radiant damage."
+habitat:
+- aquatic
+flavor: This fish's scales are mottled grey and white, almost seeming to glow in the dark.
+description:
+- header: Restorative Flesh
+  text: >
+   A serving of moon fish restores [roll 2 4] hit points, or restores one 1st-level spell slot. Moon fish are held sacred in many cultures,
+   and so eating them is often forbidden, regardless of the restorative properties.
+- header: Moon Spirits
+  text: >
+   It is somewhat unclear whether moon fish are true celestials, or merely ordinary fish somehow imbued with or possessed by some sort
+   of spirit. Either way, it is rumored that the fish have the ability to swim to and from the moon, and the ones that get lost on the
+   way become stars.

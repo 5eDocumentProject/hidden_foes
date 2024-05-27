@@ -1,0 +1,36 @@
+name: Fungal Hulk
+group: Spore Serpent
+sortindex: 2
+size: medium
+type: plant
+cr: 1/2
+hd: 13
+ac:
+- 2
+- natural armor
+speed:
+ land: 30
+stats:
+ str: 15
+ dex: 9
+ con: 13
+ int: 1
+ wis: 5
+ cha: 1
+saves:
+- str
+- con
+resist:
+- poison
+senses:
+- blindsight 60 ft. (blind beyond this radius)
+abilities:
+- name: Death Burst
+  effect: >
+   When the fungal hulk dies, it releases a cloud of toxic spores. All creatures within 5 feet of it must make a [basicsave w/con 15]
+   or be infected with fleshrot spores (see spore serpent).
+attacks:
+- name: Slam
+  type: mw
+  ability: str
+  onhit: "[roll 1 8 str] bludgeoning damage."

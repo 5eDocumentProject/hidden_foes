@@ -1,0 +1,51 @@
+name: Shield Whale
+type: beast
+size: huge
+cr: 3
+ac:
+- 3
+- natural armor
+hd: 11
+speed:
+ land: 0
+ swim: 40
+stats:
+ str: 19
+ dex: 12
+ con: 16
+ int: 3
+ wis: 11
+ cha: 5
+resist:
+- poison
+senses:
+- blindsight 1/8 mile.
+abilities:
+- name: Echolocation
+- name: Keen Hearing
+- name: Hold Breath
+  effect: The shield whale can hold its breath for up to one hour.
+attacks:
+- name: Bite
+  type: mw
+  ability: str
+  onhit: "[roll 4 4 str] piercing damage."
+- name: Ram
+  type: mw
+  ability: str
+  onhit: >
+   [roll 2 8 str] bludgeoning damage and the target must make a [save w/str str], being pushed 10 feet away from the whale on a
+   failure.
+flavor: This relatively small whale looks similar to a porpoise, but its snout and forehead are protected by a thick, bony plate.
+description:
+- header: Family Groups
+  text: >
+   Shield whales normally travel in pods of about ten individuals, led by the oldest female in the group. Their favorite foods are squid,
+   octopus, and jellyfish, although they will eat almost any small animal in a pinch. Shield whales can be found in almost any part of
+   the ocean, and can dive quite deep in search of food, although they must return to the surface at least once an hour to breathe.
+- header: Loyal Protectors
+  text: >
+   Shield whales are docile unless threatened, easily trained, and fiercely protective of their podmates. Many underwater
+   cities are home to at least one pod of tamed shield whales that protect the city from other aquatic predators.
+habitat:
+- aquatic

@@ -1,0 +1,50 @@
+name: Blood Moss
+size: large
+type: plant
+cr: 3
+hd: 21
+speed:
+ land: 5
+ climb: 5
+stats:
+ str: 16
+ dex: 5
+ con: 13
+ int: 1
+ wis: 9
+ cha: 6
+resist:
+- necrotic
+- cold
+senses:
+- tremorsense 120 ft
+abilities:
+- name: Spider Climb
+- name: Low Profile
+  effect: >
+   The blood moss covers the surface that it grows on, but because it is no more than a foot deep, other creatures can move through
+   the space it occupies as if it were difficult terrain. Until the moss makes its powers known, it looks like an ordinary bed of moss.
+   It can be identified with a successful [check 16 nature].
+actions:
+- name: Multiattack
+  effect: The blood moss makes two tendril attacks.
+attacks:
+- name: Tendril
+  type: mw
+  ability: str
+  onhit: >
+   [roll 1 6 str] bludgeoning damage, and the target is grappled by the moss. At the start of each of the moss's turns, each
+   living creature grappled by the moss takes [roll 2 6] necrotic damage, and the moss regains that many hit points. When a creature
+   escapes from the grapple, there is a 50\% chance that a patch of moss remains attached to the creature. A creature with a patch of
+   moss takes [roll 1 4] necrotic damage at the start of each of its turns. Any creature can spend an action to remove the moss.
+  special: The moss can grapple up to four creatures at a time.
+habitat:
+- swamp
+- underground
+flavor: This thick bed of dark red moss covers the dessicated corpses of its last prey.
+description:
+- header: Vampiric Moss
+  text: >
+   Blood moss hunts by waiting for a living creature to come near, and then lashing out with strong tendrils that grapple its prey amd
+   draining the blood from its victim. If the area a blood moss inhabits becomes devoid of easy prey, the moss is capable of slowly
+   crawling to new feeding grounds.

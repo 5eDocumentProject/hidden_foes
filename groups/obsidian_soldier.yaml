@@ -1,0 +1,43 @@
+name: Obsidian Soldiers
+type: construct
+sorttype: alphabetical
+headers:
+ mark: monster
+ title: group
+ toc: group
+vulnerable:
+- bludgeoning
+resist:
+- slashing
+immune:
+- acid
+- poison
+- psychic
+abilities:
+- name: Stone Heart
+  effect: >
+   When the [name] is reduced to zero hit points, it is reduced to a Tiny orb of obsidian (10 hit points, same AC and
+   resistances/vulnerabilities/etc. as the normal [name]). If this orb is not destroyed after [roll 6 4] hours, the [name] re-forms
+   around the stone with full hit points.
+- name: Immutable Form
+description:
+- header: Three Forms
+  text: >
+   An ancient curse transformed a large swath of land into a barren waste of flat obsidian. Eventually, it was discovered that this
+   obsidian could be quarried, carved, and animated. The resulting constructs are generally made in one of three forms: a basic soldier
+   type, a larger and dangerous type known as an obsidian hulk, and a more intelligent type capable of casting acid-based spells.
+- header: Solid Construction
+  text: >
+   These constructs are carved like statues from solid blocks of obsidian. The magic that animates them allows them to bend, although
+   no joints are included in their construction. At the core of each construct is a small sphere of obsidian, which remains behind after
+   the construct is destroyed. After several hours, if this heart is not destroyed, it regenerates the construct.
+- header: Obsidian Hulk
+  text: >
+   Obsidian hulks are crafted from a single large block of obsidian, and look like a pillar of roiling water turned
+   suddenly to glass. The hulks can manifest pseudopod-like appendages for long enough to attack an opponent with, after which the
+   tentacle merges back with the rest of the hulk's body.
+- header: Obsidian Mage
+  text: >
+   The obsidian mages are quite intelligent for constructs, and are capable of casting minor acid spells. They usually serve as
+   commanders of other obsidian constructs. Despite their additional intelligence, they are still completely obedient to their
+   creator.

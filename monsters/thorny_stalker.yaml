@@ -1,0 +1,54 @@
+name: Thorny Stalker
+size: medium
+type: plant
+cr: 1/2
+hd: 10
+ac:
+- 2
+- natural armor
+resist:
+- lightning
+- cold
+- piercing
+- bludgeoning
+vulnerable:
+- fire
+- slashing
+skills:
+- stealth
+- perception
+senses:
+- blindsight 60 ft
+speed:
+ land: 40
+stats:
+ str: 12
+ dex: 13
+ con: 12
+ int: 1
+ wis: 10
+ cha: 5
+abilities:
+- name: Thorns
+  effect: Any creature that hits the thorny stalker with an unarmed attack takes [roll 1 4] piercing damage.
+- name: Keen Smell
+attacks:
+- name: Bite
+  type: mw
+  ability: str
+  onhit: "[roll 3 4 str] piercing damage."
+habitat:
+- forest
+flavor: >
+ A thorny stalker looks like a roughly quadrupedal mess of vines, each tendril sporting long, razor-sharp thorns. Its most definite
+ feature is its mouth---powerful jaws with vicious, needlelike teeth.
+description:
+- header: Predatory Plants
+  text: >
+   Thorny stalkers are usually found either singly or in groups of four or five. They hunt in a way very similar to wolves, sometimes 
+   chasing their prey across long distances before finally bringing it down. Unlike many predators, thorny stalkers completely ignore
+   animals that are already dead.
+- header: Propagation
+  text: >
+   When a thorny stalker makes a kill, it leaves a small piece of one of its vines near the corpse. This vine takes root and grows
+   quickly into a new thorny stalker. A mature thorny stalker usually lives for about two weeks before dying and rotting away.

@@ -1,0 +1,55 @@
+name: Aethershard
+type: construct
+size: medium
+hd: 10
+cr: 1
+speed:
+ land: 40
+stats:
+ str: 12
+ dex: 15
+ con: 11
+ int: 5
+ wis: 11
+ cha: 10
+saves:
+- con
+senses:
+- darkvision 60 ft
+immune:
+- force
+- psychic
+- poison
+resist:
+- bludgeoning, piercing, and slashing from non-magical weapons
+abilities:
+- name: Antimagic Vulnerability
+  effect: >
+   Casting [spell Dispel Magic] on an aethershard does [roll 3 8] damage, plus [roll 1 8] damage for each slot level above
+   3rd that was used to cast the spell. When an aethershard enters the area of an [spell Antimagic Field] or starts its turn there,
+   it takes [roll 5 8] damage.
+- name: Volatile Nature
+  effect: >
+   Whenever a creature hits the aethershard with a melee weapon attack, that creature takes [roll 1 4] force damage.
+- name: Unstable
+  effect: >
+   At the start of each of the aethershard's turns, it takes [roll 1 8] damage.
+- name: Magic Weapons
+attacks:
+- name: Claw
+  type: mw
+  ability: dex
+  onhit: "[roll 1 4 dex] slashing damage plus [roll 1 8] force damage."
+actions:
+- name: Multiattack
+  effect: The aethershard makes two claw attacks.
+variants:
+- name: Stablized Aethershard
+  mods: The aethershard loses its unstable trait. This aethershard has a CR of [cr 2].
+flavor: A figure composed of crackling white energy darts across the ground.
+description:
+- header: Magic Embodied
+  text: >
+   Aethershards are naturally occuring constructs composed of pure magical energy. As such, they are vulnerable to effects that
+   dispel or suppress magic. Aethershards are highly volatile and unpredictable. The ones that occur naturally are especially unstable,
+   sometimes so much so that they slowly self-destruct.

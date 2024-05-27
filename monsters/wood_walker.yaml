@@ -1,0 +1,70 @@
+name: Wood Walker
+size: huge
+type: plant
+cr: 5
+hd: 13
+ac:
+- 4
+- natural armor
+speed:
+ land: 35
+stats:
+ str: 20
+ dex: 10
+ con: 17
+ int: 3
+ wis: 10
+ cha: 8
+vulnerable:
+- fire
+resist:
+- cold
+senses:
+- darkvision 90 ft
+languages:
+- nospeak
+- elvish
+- sylvan
+abilities:
+- name: Siege Monster
+- name: Plant Stride
+- name: Regeneration
+  effect: >
+   The wood walker regains 5 hit points at the start of its turn unless it has taken fire, poison, or necrotic damage since its last turn.
+   The wood walker dies only if it has 0 hit points and does not regenerate.
+actions:
+- name: Multiattack
+  effect: The wood walker makes one thorn darts attack and one stomp attack.
+- name: Explosive Globes
+  uses: 3/day
+  effect: >
+   The wood walker ejects a cloud of floating spheres that fill the area within 20 feet of it. For every 5 feet that a non-plant
+   creature moves within the area, that creature must make a [save w/dex con]. On a failure, the creature is hit by [roll 1 6]
+   exploding spheres. Each exploding sphere deals [roll 1 6] thunder damage. After the spheres have been set off [roll 1 6 1] times,
+   or after four minutes have passed, the effect ends.
+attacks:
+- name: Thorn Darts
+  type: rw
+  ability: dex
+  range: 60/90
+  onhit: "[roll 4 4] piercing damage."
+- name: Stomp
+  type: mw
+  ability: str
+  onhit: "[roll 3 12 str] bludgeoning damage."
+habitat:
+- forest
+flavor: >
+ Wood walkers are huge, bipedal plant creatures with a tough, wooden shell. They can emit clouds of floating spheres full of volatile
+ gases that explode at the slightest touch.
+description:
+- header: Organic Siege Engines
+  text: >
+   Wood walkers occur naturally, but long ago a sylvan race captured many specimens and bred them to create an aggressive,
+   well-armored weapon. The wild ones are much more docile, only attacking if threatened, and have been used as beasts of burden
+   by some forest-dwelling druids.
+- header: Explosive Spheres
+  text: >
+   The explosive spheres that a wood walker can eject are one of their most distinctive features. Each sphere is touch-sensitive, similar
+   to a jellyfish's stinging cells, and contains a volatile compound that explodes on contact. A wood walker grows these spheres inside
+   its wooden shell, taking about eight hours to grow a sphere from nothing to maturity.

@@ -1,0 +1,69 @@
+name: Necropolis Sifter
+size: large
+type: construct
+ac:
+- 3
+- natural armor
+cr: 4
+hd: 16
+speed:
+ land: 35
+stats:
+ str: 14
+ dex: 12
+ con: 14
+ int: 4
+ wis: 12
+ cha: 5
+immune:
+- psychic
+- poison
+resist:
+- acid
+- cold
+- necrotic
+senses:
+- darkvision 120 ft.
+languages:
+- nospeak
+- common
+actions:
+- name: Multiattack
+  effect: The necropolis sifter makes two scythe claw attacks.
+- name: Acid Spray
+  uses: recharge 6
+  effect: >
+   All creatures in a 20-foot cone must make a [basicsave w/dex 18], taking [roll 4 4] acid damage on a failure or half as much
+   damage on a success.
+- name: Animate Skeleton
+  uses: 6/day
+  effect: The necropolis sifter animates a humanoid skeleton in an adjacent space as a skeleton.
+- name: Bonestripper Beetles
+  uses: 3/day
+  effect: >
+   The necropolis sifter releases a swarm of [monster Bonestripper Beetles] into an adjacent space. The swarm can follow simple
+   directions from the sifter. The sifter can only have one swarm of bonestripper beetles active at a time.
+- name: Prepare Skeleton
+  effect: >
+   The necropolis sifter processes a skeleton in an adjacent space, coating the bones with an almost-imperceptible layer of protectant.
+   A treated skeleton does not naturally decay. As part of this action, the sifter can also graft the back of the skeleton’s skull onto
+   the skeleton’s face. If the sifter animates a skeleton that this procedure has been performed on, it animates as a
+   [monster Boneplate Skeleton] instead of a regular one.
+attacks:
+- name: Scythe Claw
+  type: mw
+  reach: 10
+  ability: str
+  onhit: >
+   [roll 2 6 str] slashing damage, and the necropolis sifter may spend a bonus action to attack another target adjacent to the first
+   that is also within reach.
+flavor: This stooped golem slinks through the catacombs, ensuring that the skeletons within remain pristine.
+description:
+- header: Keepers of the Dead
+  text: >
+   Necropolis sifters were originally created by the necromancy guild of an ancient city, with the job of keeping the city's
+   mausoleums in order. The necropolis sifters then played a part in the subsequent takeover by the necromancy guild, and after the
+   necromancers were destroyed, many of the sifters escaped destruction and were either put into service again by the new administration
+   or took up a new existence in other underground passages.
+habitat:
+- underground

@@ -1,0 +1,78 @@
+name: Alchemist Golem
+headername: Golem, Alchemist
+size: medium
+type: construct
+alignment: neutral
+cr: 3
+ac:
+- 3
+- natural armor
+hd: 14
+speed:
+ land: 30
+ climb: 20
+stats:
+ str: 13
+ dex: 13
+ con: 14
+ int: 10
+ wis: 12
+ cha: 10
+saves:
+- str
+- dex
+- con
+- int
+immune:
+- psychic
+- poison
+resist:
+- acid
+- fire
+- lightning
+senses:
+- darkvision 60 ft
+languages:
+- common
+- elvish
+- dwarvish
+abilities:
+- name: Immutable Form
+- name: Lightning Rod
+  effect: If the golem takes lightning damage, its lightning cannon action automatically recharges.
+attacks:
+- name: Claw
+  type: mw
+  ability: str
+  onhit: "[roll 2 4 str] slashing damage."
+- name: Acid Spitter (Recharge 4-6)
+  type: rw
+  ability: dex
+  range: 30/60
+  onhit: >
+   [roll 3 4] acid damage and the target takes [roll 2 4] acid damage at the end of their next turn.
+actions:
+- name: Multiattack
+  effect: The golem makes two claw attacks, or it makes one claw attack and uses its acid spitter, flamethrower, lightning cannon, or poison gas actions.
+- name: Flamethrower
+  uses: recharge 5-6
+  effect: >
+   All creatures in a 20-foot cone must make a [basicsave w/dex 15], taking [roll 3 6] fire damage on a failure, or half as much
+   on a success.
+- name: Lightning Cannon
+  uses: recharge 6
+  effect: >
+   All creatures in a 30-foot line must make a [basicsave w/dex 17], taking [roll 2 12] lightning damage on a failure,
+   or half as much on a success.
+- name: Poison Gas
+  uses: recharge 5-6
+  effect: >
+   All creatures within 15 feet of the golem must make a [basicsave w/con 16], being poisoned on a failure. While poisoned in this way,
+   a creature takes [roll 1 6] posion damage at the start of each of their turns. Affected creatures may repeat the saving throw at
+   the end of each of their turns, ending the effect on a success.
+flavor: This lanky construct carries several reservoirs of glowing fluids.
+description:
+- header: Mechanical Alchemists
+  text: >
+   Alchemical golems are imbued with enough intelligence to brew simple alchemical concotions, which they use to fuel their
+   many exotic weapons.

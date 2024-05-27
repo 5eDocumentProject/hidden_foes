@@ -1,0 +1,42 @@
+name: Twinlance Serpent
+size: tiny
+type: beast
+one_column: True
+cr: 1/4
+ac:
+- 2
+- natural armor
+hd: 3
+speed:
+ land: 30
+ burrow: 15
+stats:
+ str: 4
+ dex: 15
+ con: 13
+ int: 1
+ wis: 11
+ cha: 5
+saves:
+- dex
+cond-immune:
+- blinded
+senses:
+- blindsight 60 ft.
+- tremorsense 100 ft.
+actions:
+- name: Multiattack
+  effect: The twinlance serpent makes two impale attacks.
+attacks:
+- name: Impale
+  type: mw
+  ability: dex
+  onhit: "[roll 1 4 dex] piercing damage."
+flavor: Both the head and the tail of this stocky snake are encased in a horny sheath.
+description:
+- header: Armor Plates
+  text: >
+   The bony armor on the serpent's head and tail allow it to burrow quickly through the earth. The serpent cannot bite effectively, but
+   it can strike with both head and tail in rapid succession, stabbing at any creature that threatens it.
+habitat:
+- underground

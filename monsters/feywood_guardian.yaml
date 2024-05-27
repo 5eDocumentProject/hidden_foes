@@ -1,0 +1,83 @@
+name: Feywood Guardian
+size: medium
+type: plant
+alignment: lawful neutral
+cr: 5
+hd: 19
+ac:
+- 6
+- natural armor
+speed:
+ land: 30 
+stats:
+ str: 15
+ dex: 11
+ con: 15
+ int: 5
+ wis: 12
+ cha: 11
+vulnerable:
+- fire
+resist:
+- poison
+- radiant
+senses:
+- darkvision 120 ft
+- blindsight 60 ft
+languages:
+- telepathy 60 ft
+abilities:
+- name: Magic Resistance
+- name: Regeneration
+  effect: >
+   Unless the guardian has suffered necrotic, poison, or fire damage since its last turn, it regains 5 hit points at the start of its turn. It does not die unless it has been
+   reduced to zero hit points and does not regenerate.
+- name: Plant Stride
+actions:
+- name: Multiattack
+  effect: The guardian makes three gleaming scimitar attacks or two venomed glaive attacks, and one exploding berries attack.
+- name: Thorn Shower
+  uses: recharge 5-6
+  effect: >
+   All creatures in a 30-foot cone must make a [save w/dex con], taking [roll 4 4] piercing damage on a failure, or half as much damage on a success.
+attacks:
+- name: Venomed Glaive
+  type: mw
+  reach: 10
+  ability: str
+  onhit: "[roll 1 10 str] slashing damage plus [roll 1 3] poison damage."
+- name: Exploding Berries
+  type: rw
+  ability: dex
+  range: 30/60
+  onhit: >
+   [roll 1 4] lightning damage plus [roll 1 4] thunder damage, and all creatures within 5 feet of the target must succeed on a
+   [save w/dex con] or take half as much damage.
+- name: Gleaming Scimitar
+  type: mw
+  ability: str
+  onhit: "[roll 1 8 str] slashing damage plus [roll 1 4] radiant damage."
+habitat:
+- forest
+innate-spellcasting:
+ ability: wis
+ spells:
+  - frequency: at will
+    spells:
+    - Guidance
+  - frequency: 3/day
+    spells:
+    - Entangle
+    - Faerie Fire
+  - frequency: 1/day
+    spells:
+    - Grasping Vine
+    - Plant Growth
+    - Spike Growth
+flavor: Thick vines grow throughout this suit of white, wooden armor, some of them sporting cyan berries or fearsome thorns.
+description:
+- header: Ritual Creation
+  text: >
+   An ancient elvish civilization crafted the feywood guardians to protect their realm. The process involved carving a suit of armor from a special white wood, and then allowing
+   certain types of vine to grow throughout the armor, before finally enchanting and animating the assembly through a lengthy ritual. With the fall of the elvish city, the process
+   of creating feywood guardians was all but lost, known only to a few forest mystics who lack the resources to do anything with their knowledge.

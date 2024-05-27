@@ -1,0 +1,37 @@
+name: Obsidian Mage
+size: medium
+group: Obsidian Soldiers
+shortname: mage
+cr: 1
+hd: 10
+speed:
+ land: 30
+stats:
+ str: 14
+ dex: 9
+ con: 12
+ int: 14
+ wis: 11
+ cha: 10
+saves:
+- con
+- wis
+senses:
+- darkvision 60 ft
+languages:
+- common
+attacks:
+- name: Obsidian Staff
+  type: mw
+  ability: str
+  onhit: "[roll 1 4 str] bludgeoning damage plus 1 acid damage."
+innate-spellcasting:
+ ability: int
+ spells:
+ - frequency: at will
+   spells:
+   - Acid Splash }(7 (2d6) damage){
+ - frequency: 4/day
+   spells:
+   - Melf's Acid Arrow
+   

@@ -1,0 +1,70 @@
+name: Skullblade
+size: medium
+type: construct
+alignment: lawful evil
+cr: 6
+hd: 10
+ac:
+- 3
+- natural armor
+speed:
+ land: 30
+ hover: 30
+stats:
+ str: 13
+ dex: 16
+ con: 17
+ int: 10
+ wis: 10
+ cha: 12
+saves:
+- dex
+resist:
+- acid
+- bludgeoning, piercing, and slashing from non-magical weapons
+immune:
+- necrotic
+- poison
+- psychic
+languages:
+- nospeak
+- abyssal
+- common
+abilities:
+- name: Magic Weapons
+- name: Skeleton Puppet
+  effect: >
+   The skullblade appears to be wielded by a skeleton. Attacks against this skeleton have no effect on the skullblade. The skeleton has
+   AC 14, 25 hit points, vulnerability to bludgeoning damage, and immunity to poison and psychic damage.
+- name: Animated Glaive
+  effect: >
+   When the skullblade is reduced to zero HP, it falls to the ground inert. It can then be picked up and used as a weapon.
+   [include item include/bone_glaive.yaml]
+actions:
+- name: Multiattack
+  effect: The skullblade makes three slash attacks.
+attacks:
+- name: Slash
+  type: mw
+  ability: dex
+  bonus: 3
+  onhit: "[roll 1 10 dex 3] slashing damage plus [roll 2 6] necrotic damage."
+flavor: This skeleton wields an ornate, double-bladed glaive with admirable skill, spinning it in lethal patterns.
+description:
+- header: Misdirecting Appearance
+  text: >
+   Although a skullblade appears to be a skeleton wielding a glaive, it is in fact the other way around. The sentient glaive bonds
+   with a skeletal puppet, animating it so that it appears to be the true enemy.
+- header: Ancient Bodyguards
+  text: >
+   The skullblades were forged ages ago by an ancient lich to serve as elite soldiers and bodyguards. The lich is long gone, but
+   the skullblades remain, guarding the remnants of the lich’s domain.
+- header: Cursed Treasure
+  text: >
+   When defeated, a skullblade falls inert and waits to be picked up by some hapless adventurer. Once the skullblade has been claimed,
+   it slowly eats away at its owner’s life force until it can finally reanimate, using its erstwhile owner as its new skeletal puppet.
+- header: Destruction
+  text: >
+   A skullblade cannot be destroyed or truly damaged by mundane means; it can merely be incapacitated. The only known way to permanently
+   destroy a skullblade is to use it to kill a powerful undead creature---a skullblade wielded as a weapon crumbles to dust when used
+   to deal damage to an Undead of CR 10 or higher.

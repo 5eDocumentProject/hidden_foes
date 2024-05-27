@@ -1,0 +1,40 @@
+name: Wax Cap
+size: small
+type: plant
+one_column: True
+cr: 1/8
+hd: 3
+ac:
+- 2
+- natural armor
+speed:
+ land: 30
+stats:
+ str: 10
+ dex: 14
+ con: 12
+ int: 2
+ wis: 11
+ cha: 2
+abilities:
+- name: Slippery
+actions:
+- name: Wax
+  uses: 3/day
+  effect: >
+   This ability targets a surface up to ten feet square, centered on a point within 30 feet. Any creature other than the wax cap that moves onto the surface must make a
+   [save w/dex con], falling prone on a failure. The waxy coating on the surface lasts for [roll 2 4 2] rounds.
+attacks:
+- name: Slam
+  type: mw
+  ability: str
+  onhit: "[roll 1 4 str] bludgeoning damage."
+habitat:
+- underground
+- grassland
+flavor: This fungal creature is coated in a thick layer of translucent, green wax.
+description:
+- header: Slippery Mushrooms
+  text: >
+   Wax caps are small plant creatures closely related to myconids. They are covered in a slippery layer of wax, allowing them to squeeze easily through tight gaps. They
+   also have the ability to cover nearby surfaces with this wax, causing other creatures to lose their footing.

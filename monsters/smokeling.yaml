@@ -1,0 +1,55 @@
+name: Smokeling
+type: fey
+size: small
+alignment: chaotic neutral
+cr: 2
+ac:
+- 1
+- natural armor
+hd: 6
+speed:
+ land: 40
+stats:
+ str: 9
+ dex: 16
+ con: 10
+ int: 11
+ wis: 11
+ cha: 12
+resist:
+- cold
+- fire
+- poison
+saves:
+- dex
+senses:
+- darkvision 90 ft
+languages:
+- sylvan
+abilities:
+- name: Nimble Escape
+- name: See Through Darkness
+  effect: The smokeling is not affected by [spell Darkness] spells cast by itself or other smokelings.
+innate-spellcasting:
+ ability: int
+ spells:
+ - frequency: 1/day
+   spells:
+   - Darkness
+actions:
+- name: Multiattack
+  effect: The smokeling makes two wisp knife attacks.
+attacks:
+- name: Wisp Knife
+  ability: dex
+  type: mw
+  onhit: >
+   [roll 1 4 dex 1] piercing damage, and the target’s attacks and spells do half damage to the smokeling until the start of the
+   smokeling’s next turn.
+  special: The smokeling may teleport up to 15 feet in any direction.
+flavor: This short, wiry, grey-skinned creature moves with quick, birdlike motions. Despite its erratic movement, it maintains a sense of grace.
+description:
+- header: Ephemeral
+  text: >
+   Smokelings are known for being unpredictable: they can appear and disappear at a moment's notice. They are quite fond of sprinting in,
+   stabbing someone with a knife, and then teleporting away before the victim can react.

@@ -1,0 +1,33 @@
+name: Sentry Vine
+sorttype: alphabetical
+headers:
+ mark: monster
+ toc: monster
+type: plant
+skills:
+- stealth
+vulnerable:
+- fire
+resist:
+- piercing
+- bludgeoning
+flavor: >
+ This grove of long, thick vines sports several huge, sweet-smelling flowers and roughly conical seed pods. The pods fire explosive
+ packets of needle-sharp seeds at any creature that wanders too close.
+description:
+- header: Ephemeral Predators
+  text: >
+   Sentry vines grow quickly from a seed to the flowering stage. Each vine has a single flower, which matures into the seed-firing
+   fruit body that is the most dangerous feature of a sentry vine. A single sentry vine usually has 6 (2d4 + 1) packets of seeds to
+   fire. Soon after firing all of its seeds, the sentry vine will wither away. In some varieties, the root bulb survives and puts out a
+   new vine eventually, but many types simply die after dispersing their seeds.
+- header: Bewitching Flowers
+  text: >
+   Sentry vine flowers are huge, almost two feet across, and have a mesmerizing aroma. Groves of sentry vine often have several vines
+   in the flowering stage, which attract animals to be attacked by the vines in the fruiting stage.
+- header: Forest Legend
+  text: >
+   There are reports of rare varieties of sentry vine that have multiple seed-firing heads or that grow to incredible sizes, but it
+   is unknown whether or not these rumors have any basis in fact.
+habitat:
+- forest

@@ -1,0 +1,46 @@
+name: Sentry Vine
+size: small
+group: Sentry Vine
+cr: 1
+ac:
+- 1
+- natural armor
+hd: 6
+speed:
+ land: 5
+ climb: 5
+stats:
+ str: 13
+ dex: 12
+ con: 13
+ int: 1
+ wis: 3
+ cha: 2
+senses:
+- tremorsense 90 ft. (blind beyond this radius)
+abilities:
+- name: Spider Climb
+attacks:
+- name: Exploding Seed Pod
+  type: rw
+  range: 30/90
+  ability: dex
+  onhit: >
+   [roll 1 6] thunder damage plus [roll 1 6] piercing damage, and all creatures within 5 feet of the target must make a
+   [save w/dex dex], taking half damage on a failure or no damage on a success.
+variants:
+- name: Flowering Sentry Vine
+  mods: >
+   The vine loses its exploding seed pod attack, it has a CR of [cr 0], and gains the following trait:
+   [newline][bolditalics Mesmerizing Fragrance.] Whenever a creature starts its turn within 120 feet of the vine, it must make a
+   [save w/wis con]. On a failure, the creature is charmed by the vine. While charmed in this way, the creature cannot take any
+   actions other than moving closer to the vine. Whenever a charmed creature takes damage, it may repeat the saving throw,
+   ending the effect on a success. Once this effect has ended on a creature, it is immune to the fragrance of all sentry
+   vines for 24 hours.
+- name: Hydra Vine
+  mods: >
+   The vine gains four hit dice, increasing its max hit points to [roll 10 6 10]; its CR increases to [cr 3]; and it gains the
+   following traits: [newline][bolditalics Multiple Heads.] The sentry vine has three seed-firing pods. As long as the sentry vine has more
+   than one pod, it has advantage on checks to avoid being stunned, knocked unconscious, or controlled in any way. Whenever the vine
+   takes 10 or more slashing damage in a single turn, it loses one of its pods. [newline][bolditalics Multiattack.] The sentry vine makes
+   one Exploding Seed Pod attack for each pod it has.

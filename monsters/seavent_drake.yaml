@@ -1,0 +1,80 @@
+name: Seavent Drake
+headername: Drake, Seavent
+size: large
+type: dragon
+alignment: chaotic neutral
+cr: 6
+hd: 20
+ac:
+- 4
+- natural armor
+speed:
+ land: 30
+ fly: 80
+ swim: 60
+stats:
+ str: 17
+ dex: 13
+ con: 15
+ int: 11
+ wis: 12
+ cha: 8
+saves:
+- con
+immune:
+- cold
+- fire
+vulnerable:
+- radiant
+skills:
+- stealth
+senses:
+- darkvision 120 ft
+languages:
+- abyssal
+- draconic
+abilities:
+- name: Deep-Sea Denizen
+  effect: The seavent drake suffers no penalties from extreme pressure or cold.
+- name: Legendary Resistance
+  uses: 1/day
+actions:
+- name: Multiattack
+  effect: The seavent drake makes a bite attack and two claw attacks.
+- name: Breath Weapon
+  uses: recharge 5-6
+  effect: >
+   All creatures in a line 30 feet long and 10 feet wide must make a [basicsave w/dex 15], taking [roll 6 6] fire damage and being
+   blinded for one round on a failure, or half as much damage and no blindness on a success. Creatures that are underwater have
+   disadvantage on their saving throw, and creatures that are not underwater take an additional [roll 2 6] bludgeoning damage if
+   they fail their saving throw.
+attacks:
+- name: Bite
+  type: mw
+  ability: str
+  reach: 10
+  onhit: >
+   [roll 4 4 str] piercing damage and, if the target is a living creature, the target starts bleeding. While bleeding, the target takes
+   [roll 1 3] necrotic damage at the start of each of their turns. The bleeding stops when the target regains any health or when the
+   wound is bandaged, which takes a successful [check 12 medicine].
+- name: Claw
+  type: mw
+  ability: str
+  onhit: "[roll 2 6 str] slashing damage."
+habitat:
+- aquatic
+flavor: This black-scaled drake has a mouth full of terrifying, needle-sharp teeth.
+description:
+- header: Keepers of the Depths
+  text: >
+   These drakes dwell in the deepest reaches of the ocean, rarely coming to the surface for any reason. Although seavent drakes have
+   rather unpleasant personalities, they have dedicated their existence to preventing the hidden evils of the ocean depths from emerging
+   to wreak havoc on the world above.
+- header: Vicious Combatants
+  text: >
+   A seavent drake's horrifying array of fangs can inflict terrible bleeding injuries. When faced with a more powerful adversary, the drakes prefer to bite and then retreat and let
+   their opponent bleed for a while before coming in again for another attack. When cornered, or when facing weaker foes, seavent drakes fight with unbridled ferocity.
+- header: Black Smokers
+  text: >
+   Seavent drakes are capable of breathing jets of cloudy, black, boiling hot water, similar to the emissions of deep-sea hydrothermal vents. This breath weapon is likely what
+   gave the drakes their name.

@@ -1,0 +1,60 @@
+name: Dangletrap Weed
+size: huge
+type: plant
+cr: 1
+hd: 8
+speed:
+ land: 5
+ climb: 5
+stats:
+ str: 12
+ dex: 4
+ con: 13
+ int: 1
+ wis: 11
+ cha: 2
+immune:
+- bludgeoning
+- piercing
+abilities:
+- name: Spider Climb
+- name: Tendril Curtain
+  effect: >
+   The dangletrap weed itself is a thick vine that occupies a space about 15 feet wide, 15 feet long, and 3 feet high. From this vine grow
+   hundreds of tentacles that are about 45 feet long, which dangle underneath the weed's area. Attacks against the tentacles do no damage
+   to the weed, and any creature in the area occupied by the tendrils is a potential target for the weed's grasping tendrils.
+actions:
+- name: Reel
+  effect: Any number of Large or smaller creatures grappled by the weed are pulled 15 feet toward the weed.
+- name: Multiattack
+  effect: >
+   The dangletrap weed takes a reel action, makes a digestive tendril attack, and then makes a grasping tendril attack.
+attacks:
+- name: Grasping Tendril
+  type: mw
+  reach: 45
+  target: up to three creatures directly underneath the weed
+  ability: str
+  onhit: >
+   The target is grappled by the dangletrap weed. If the target is already grappled by the weed, the target is restrained until the
+   grapple ends. The weed can have any number of creatures grappled at a time.
+- name: Digestive Tendril
+  type: mw
+  target: any number of creatures grappled by the weed
+  ability: str
+  onhit: "[roll 2 4] acid damage."
+habitat:
+- forest
+- underground
+flavor: Countless long tendrils hang from the trees, waiting motionless for something edible to walk into them.
+description:
+- header: Dangling Tendrils
+  text: >
+   Dangletrap weeds have a primary rootvine from which hang a multitude of tentacles, somewhat similar to a jellyfish. The weed feeds by
+   grappling any creature that walks into the curtain of tendrils, then pulling the creature up to its central vine where smaller tendrils
+   can digest the weed's prey.
+- header: Lofty Perches
+  text: >
+   Dangletrap weeds live on high tree branches or on the roofs of caverns, where other creatures are likely to walk into their long tendril
+   curtains. There are stories of aquatic variants that live on the bottom of a body of water, and their tendrils float up above the weed
+   instead of hanging down beneath it.

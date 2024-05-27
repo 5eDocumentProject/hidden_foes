@@ -1,0 +1,58 @@
+name: Ink Serpent
+size: tiny
+type: ooze
+cr: 1
+hd: 15
+speed:
+ land: 30
+ climb: 25
+ swim: 25 
+stats:
+ str: 1
+ dex: 14
+ con: 14
+ int: 3
+ wis: 11
+ cha: 10
+senses:
+- blindsight 60 ft
+skills:
+- stealth
+abilities:
+- name: Regeneration
+  effect: >
+   At the start of the ink serpent’s turn, it regains five hit points unless it has suffered fire damage or damage from magical weapons
+   since the end of its last turn. The serpent only dies if it starts its turn with 0 hit points and does not regenerate.
+attacks:
+- name: Bite
+  type: mw
+  ability: dex
+  onhit: 1 piercing damage plus [roll 3 6 3] poison damage, and the target must succeed on a [save w/con con] or be poisoned for one minute.
+variants:
+- name: Blue Ink Serpent
+  mods: >
+   The bite attack deals [roll 5 4] psychic damage instead of poison damage, the save becomes a Charisma saving throw, and if a
+   creature fails it they fall asleep for one minute. The serpent has a CR of [cr 2].
+- name: Brown Ink Serpent
+  mods: >
+   The serpent’s bite attack deals [roll 4 6] necrotic damage instead of poison damage, it loses its regeneration trait, and whenever
+   a creature takes necrotic damage from the serpent’s bite attack, the serpent regains that many hit points. The serpent has a CR
+   of [cr 2].
+- name: Gold Ink Serpent
+  mods: >
+   The serpent regains ten hit points on regeneration instead of five, its bite attack deals an additional [roll 1 8] radiant damage,
+   and the save DC to avoid being poisoned increases by 3. The serpent has a CR of [cr 2].
+- name: Green Ink Serpent
+  mods: >
+   The bite attack deals an additional [roll 1 6] poison damage, and the save DC to avoid being poisoned increases by 4. The serpent has
+   a CR of [cr 2]
+- name: Red Ink Serpent
+  mods: >
+   The serpent gains immunity to fire damage, its bite attack deals an additional [roll 1 6] fire damage, and while a creature is
+   poisoned by the serpent, it takes 1 fire damage at the start of each of its turns. The serpent has a CR of [cr 2].
+flavor: A shimmering snake formed from vibrantly colored ink suddenly springs from the runes inscribed on a scroll.
+description:
+- header: Arcane Guardians
+  text: >
+   Ink serpents are created through the use of the following spell, and are used to guard tomes, scrolls, or other written material.
+   [include spell include/ink_serpent.yaml]

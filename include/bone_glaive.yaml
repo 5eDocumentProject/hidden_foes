@@ -1,0 +1,16 @@
+name: Bone Glaive
+type: weapon
+tags:
+- glaive
+rarity: very rare
+attunement: True
+properties: >
+ This weapon has the finesse property and loses the heavy property. Add 3 to attack and damage rolls made with this weapon. This weapon
+ deals an additional [roll 2 6] necrotic damage on a hit. When you make an attack with this weapon, you may make a second attack with
+ this weapon as a bonus action, but do not add your proficiency bonus to the second attack roll.
+curse: >
+ Once a creature attunes to this weapon, it cannot end its attunement (other than by a [spell Remove Curse] spell or similar magic).
+ At midnight each night, the attuned creature suffers [roll 2 4] necrotic damage. This damage cannot be healed while the creature is
+ attuned to the weapon. When the attuned creature dies, the glaive reanimates as a [monster Skullblade] and uses the corpse of the
+ attuned creature as its skeleton puppet.
+destruction: A bone glaive crumbles to dust when used to deal damage to an Undead of CR 10 or higher.

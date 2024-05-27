@@ -1,0 +1,47 @@
+name: Fungal Thrall
+group: Spore Serpent
+sortindex: 3
+size: medium
+type: plant
+cr: 1/4
+ac:
+- 1
+- natural armor
+hd: 2
+speed:
+ land: 30
+stats:
+ str: 13
+ dex: 14
+ con: 13
+ int: 10
+ wis: 12
+ cha: 12
+saves:
+- dex
+- con
+- cha
+skills:
+- deception
+resist:
+- poison
+senses:
+- blindsight 60 ft
+languages:
+- common
+abilities:
+- name: Death Burst
+  effect: >
+   When the fungal thrall dies, it releases a cloud of toxic spores. All creatures within 15 feet of it must make a [basicsave w/con 15]
+   or be infected with mindrot spores (see spore serpent).
+- name: Mimicry
+  effect: >
+   The fungal thrall can mimic the person it was in life, but it does not have detailed memories of its former existence.
+   A [check 15 perception] is enough to tell that something is wrong.
+attacks:
+- name: Slam
+  type: mw
+  ability: str 
+  onhit: "[roll 1 6 str] bludgeoning damage."
+habitat:
+- urban

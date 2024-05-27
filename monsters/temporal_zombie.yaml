@@ -1,0 +1,43 @@
+name: Temporal Zombie
+headername: Zombie, Temporal
+size: medium
+type: undead
+alignment: neutral evil
+one_column: True
+cr: 1/4
+hd: 7
+speed:
+ land: 30
+stats:
+ str: 12
+ dex: 13
+ con: 13
+ int: 2
+ wis: 5
+ cha: 3
+immune:
+- cold
+- poison
+vulnerable:
+- fire
+cond-immune:
+- stunned
+abilities:
+- name: Stuck in Time
+  effect: >
+   At the start of each of the zombie’s turns, it regains [roll 2 4] hit points, loses all conditions, and any effects with a time limit
+   that apply to the zombie expire. The zombie is immune to any time-altering effects directed at it.
+attacks:
+- name: Shortsword
+  type: mw
+  ability: str
+  onhit: "[roll 1 6 str] slashing damage."
+habitat:
+- desert
+flavor: This dessicated corpse wields a short, curved sword.
+description:
+- header: Frozen in Time
+  text: >
+   When a chronomancer uses dark magic to steal another person's lifetime, the victim is transformed into a temporal zombie---not alive, but also not entirely dead. Such zombies
+   quickly shrivel to a mummy-like state. Anything that takes effect over a period of time has almost no effect on a temporal zombie, a result of their existence in a sort of
+   chronological limbo.

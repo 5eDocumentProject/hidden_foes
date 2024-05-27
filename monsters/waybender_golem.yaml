@@ -1,0 +1,65 @@
+name: Waybender Golem
+headername: Golem, Waybender
+size: large
+type: construct
+cr: 6
+ac:
+- 5
+- natural armor
+hd: 6
+speed:
+ land: 30
+stats:
+ str: 19
+ dex: 8
+ con: 20
+ int: 1
+ wis: 10
+ cha: 2
+saves:
+- str
+- con
+skills:
+- survival
+immune:
+- poison
+- psychic
+resist:
+- force
+- bludgeoning, piercing, and slashing from non-magical weapons
+senses:
+- tremorsense 120 ft
+languages:
+- nospeak
+- common
+- sylvan
+abilities:
+- name: Magic Resistance
+- name: Aura of Instability
+  effect: All creatures within 60 feet of the golem have disadvantage on Wisdom (Survival) checks.
+- name: Shifting Ground
+  effect: >
+   For every five feet of movement that a creature spends while within 30 feet of the golem, the golem may have that creature move twice
+   as far, or only half as far, as it would normally. The golem can also cause that creature to be unaffected by any difficult terrain
+   in the area. The golem can affect itself with this ability. The first time that a creature is affected by this ability on a turn,
+   it can make a [check 11 survival], gaining immunity to the effect for this turn on a success.
+actions:
+- name: Multiattack
+  effect: The golem makes two slam attacks.
+attacks:
+- name: Slam
+  type: mw
+  ability: str
+  onhit: "[roll 2 8 str] bludgeoning damage plus [roll 2 4] force damage."
+reactions:
+- name: So Far Away
+  effect: >
+   When the golem is targeted by a ranged attack, treat the distance between the golem and the attacker as 30 feet further. This could
+   cause the attack to have disadvantage or to miss entirely.
+flavor: The air and ground shimmer around this greenish stone golem.
+description:
+- header: Shapers of the Land
+  text: >
+   Waybender golems have the power to alter distance around them, making it impossible to be sure of anything's precise location.
+   Creatures allied with a waybender golem can find themselves moving with great speed and efficency, while a golem's enemies will
+   be slowed or obstructed at every turn.

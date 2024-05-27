@@ -1,0 +1,84 @@
+name: Reef Whale
+type: beast
+size: gargantuan
+cr: 8
+ac:
+- 6
+- natural armor
+hd: 14
+speed:
+ land: 0
+ swim: 35
+stats:
+ str: 25
+ dex: 11
+ con: 20
+ int: 4
+ wis: 14
+ cha: 5
+skills:
+- nature
+resist:
+- necrotic
+- poison
+senses:
+- blindsight 1/4 mile
+abilities:
+- name: Echolocation
+- name: Keen Hearing
+- name: Oxygen-generating Symbiotes
+  effect: >
+   The reef whale's cavernous mouth is home to colonies of plantlike organisms that generate oxygen. As long as the whale is exposed to
+   at least 10 hours of sunlight each day, there is breathable air inside the whale's mouth. If the whale has spent more than 16 hours
+   in darkness, it must go to the surface every half-hour to replenish its air supply.
+- name: Protective Symbiotes
+  effect: >
+   Whenever a creature targets the reef whale with a melee attack, roll 1d6 on the following table.
+   [table cX
+   1-2 & no effect &
+   3-4 & the whale gets +1 AC against this attack &
+   5 & the attacker must succeed on a [basicsave w/dex 13] or take [roll 1 4] piercing damage plus [roll 1 4] poison damage &
+   6+ & the attacker must succeed on a [basicsave w/dex 16] or take [roll 1 4] piercing damage]
+actions:
+- name: School
+  uses: recharge 5-6
+  effect: >
+   Any number of creatures (the reef whale chooses which ones) in a 15-foot-radius sphere centered on a point that the whale can see
+   within 90 feet must make a [save w/dex con], taking [roll 4 6] piercing damage on a failure, or half as much damage on a success.
+- name: Provoke Symbiotes
+  uses: recharge 6
+  effect: >
+   For the next [roll 1 4] rounds, all rolls on the protective symbiotes table get a +1 bonus, and results of 6+ deal an additional
+   [roll 1 4] piercing damage on a failed saving throw.
+attacks:
+- name: Ram
+  type: mw
+  ability: str
+  onhit: >
+   [roll 2 10 str] bludgeoning damage and the target must make a [save w/str str], being pushed 10 feet away from the whale on a
+   failure.
+flavor: Coral grows on the back of this vast beast, turning it into a mobile habitat for all manner of fish and crustaceans.
+description:
+- header: Living Ecosystem
+  text: >
+   Reef whales are enormous creatures that carry a reef-like ecosystem on their backs. They live near the surface of the ocean,
+   where a colony of plants in the whale's mouth can generate oxygen for their host.
+- header: Digestive Filaments
+  text: >
+   The back of the whale's mouth contains a number of sticky filaments that digest any food particles that get stuck on them.
+   Any creature that touches a filament suffers 2 (1d4) acid damage, but the adhesive is not strong enough to hold any creature larger
+   than a shrimp. The only openings in the mouth are a series of gill-like structures in the roof of the mouth to intake oxygen.
+   Since the filaments in the mouth digest food, reef whales have no stomach.
+- header: Oxygen Pockets
+  text: >
+   A reef whale's mouth is home to colonies of oxygen-generating plants. As a result, a healthy whale has a layer of breathable air
+   trapped against the roof of its mouth. Any air-breathing creature can breathe from this pocket of air, but they have to be careful
+   of the digestive filaments that line the mouth.
+- header: Gentle Giants
+  text: >
+   Reef whales are almost completely harmless; they're large enough that very few things would bother to attack them, and they don't
+   need to hunt for food. If anything poses a serious threat to one, their first defense would be to swim away. If they can't flee,
+   they attack by ramming into their opponents. The reef whales also have an uncanny connection with the other animals that inhabit
+   them, and can command the thousands of fish that dwell on their backs to form a school and attack.
+habitat:
+- aquatic

@@ -1,0 +1,55 @@
+name: Spinegum Shambler
+headername: Shambler, Spinegum
+group: Shambler
+size: huge
+cr: 4
+ac:
+- 3
+- natural armor
+hd: 20
+speed:
+ land: 15
+stats:
+ str: 19
+ dex: 4
+ con: 13
+ int: 1
+ wis: 10
+ cha: 5
+saves:
+- str
+- con
+resist:
+- piercing from non-magical weapons
+vulnerable:
+- fire
+- slashing from magical weapons
+senses:
+- tremorsense 120 ft.
+actions:
+- name: Multiattack
+  effect: The spinegum shambler makes three slam attacks and a seedpod shower attack.
+attacks:
+- name: Slam
+  type: mw
+  reach: 20
+  ability: str
+  onhit: "[roll 1 8 str] bludgeoning damage."
+- name: Seedpod Shower
+  type: rw
+  range: 20/30
+  ability: str
+  onhit: "[roll 1 4 str]"
+  special: >
+   Whether or not the attack hits, the ground in a 5-foot radius around the target is covered with spiny seed pods
+   (treat them as caltrops).
+flavor: This tree's razor-sharp seedpods drop with frightening frequency.
+description:
+- header: Defensive Seedpods
+  text: >
+   A spingum tree produces thousands of extremely sharp seedpods, which then drop to the ground, forming a formidable field of caltrops.
+   Those who venture under a spinegum also run the risk of having seedpods fall on their heads. Because of the danger of walking beneath
+   a spinegum, few animals bother to get close enough to eat its leaves or seeds. The nut-meat inside of a spinegum seed is edible,
+   but is hard to gather in quantity and does not taste very good.
+habitat:
+- forest

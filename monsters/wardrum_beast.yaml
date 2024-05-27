@@ -1,0 +1,45 @@
+name: Wardrum Beast
+size: huge
+type: beast
+cr: 5
+hd: 16
+ac:
+- 3
+- natural armor
+speed:
+ land: 40
+stats:
+ str: 20
+ dex: 8
+ con: 16
+ int: 1
+ wis: 9
+ cha: 4
+immune:
+- thunder
+abilities:
+- name: Thundering Drums
+  effect: >
+   Any small or larger creature riding the wardrum beast can take an action to beat the drums, forcing all creatures within 100 feet that
+   can hear the drums to make a [basicsave w/con 15], taking [roll 2 8] thunder damage on a failure, or half as much damage on a success.
+- name: Charge
+  effect: >
+   If the wardrum beast moves at least 30 feet straight toward a target and then hits it with a gore attack on the same turn, the target
+   takes an extra [roll 2 6] slashing damage. If the target is a creature, it must succeed on a [save w/str str] or be knocked prone.
+attacks:
+- name: Gore
+  type: mw
+  ability: str
+  onhit: "[roll 4 6 str] slashing damage."
+habitat:
+- grassland
+flavor: Four enormous drums are lashed to the shoulders of this massive, tusked beast.
+description:
+- header: Beasts of War
+  text: >
+   A wardrum beast is a huge, boarlike creature to which several huge drums have been strapped. Atop the beast is a platform from which
+   archers can fire, or where army commanders can use the drums to signal their soldiers.
+- header: Howdah
+  text: >
+   A wardrum beast has a platform on its back that is large enough to accomodate one large creature, four medium creatures, or nine small
+   creatures. Any creature on this platform can beat the drums tied to the beast.
